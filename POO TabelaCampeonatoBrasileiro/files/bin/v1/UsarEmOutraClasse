@@ -1,0 +1,28 @@
+Reutilizar 
+
+		this.PontosVitoria = vitoria;
+		this.PontosEmpate = empate;
+		this.PontosDerrotas = derrotas;
+		
+Nâo precisa de muitos metodos se pide acessar a variavel que ja é constante
+
+	public int CalcPonts() {
+		
+		int pontos =( getVitoria()  * getPeso1()  )
+				 		+ 
+					( getEmpate()   * getPeso2()   ) 
+						+ 
+			    	( getDerrotas() * getPeso3() ) ;
+		
+		return pontos;
+	}
+	
+	tire os get peso e substitua pelas variaveis 
+	
+	Não precisa zerar quando estanciar a classe , pode zerar na inicialização
+		Zere antes para não trazer informação lixo
+		
+		
+		
+		
+	Quanbdo eu w

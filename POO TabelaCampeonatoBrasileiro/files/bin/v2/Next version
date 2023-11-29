@@ -1,0 +1,39 @@
+Emvez de criar varias variaveis dentro da tabela 
+	Associação simples 
+
+__________________________________________________________
+Versão 1
+__________________________________________________________
+	Time				Tabela 
+		atributo1			atributo1 
+		atributo2			atributo2 
+		atributo3			atributo3
+		
+		FAZER POR PARTES 
+		CRIAR ESTRUTURA QUE GUARDE OS OBJETOS (TIMES)
+		E ESCREVER OS VETORES e exibir os vetores
+		
+			PERGUNTAS 
+				como eu consigo adicionar valor aos atributos
+				do objeto que estão dentro de cada posição
+				na array ?
+				
+				Usando metodos getters e setters se caso 
+				decidir n estanciar cada objeto com 
+				valores de seus atributos no construtor 
+				assim no momento estanciado
+				
+				link de video do youtube ensinando isto
+					eu primeiro assisto o video 
+					depois volto de novo no video e vou fazer e assistindo e fazendo
+					[](https://youtu.be/fTLvtqma1vs?si=lffHqOdOUdblsHxe)
+				
+__________________________________________________________
+Versão 2
+__________________________________________________________
+	Time				Tabela 
+		atributo1			OBJ time - atributo1 -atributo2 -atributo3
+		atributo2				show time.atributo1 
+		atributo3
+		
+	

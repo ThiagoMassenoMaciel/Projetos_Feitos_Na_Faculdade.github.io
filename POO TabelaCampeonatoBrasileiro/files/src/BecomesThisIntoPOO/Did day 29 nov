@@ -1,0 +1,31 @@
+Time.java 
+	estanciar e atribuir valores ao OBJETO time
+Tabela/Brasileiraoo.java
+	Scanner Teclado
+		estanciar objeto PARA input nome dos times
+	LerTimes()
+		Input times dentro de uma array de objetos
+	EscreverTimes()
+		Escrever Todos os Times com Todos seus valores organizados em matriz
+	Pontuacao()
+		Calcular a pontuação com base nos valores para cada time
+	SaldoGols()
+		Calc saldo dos gols para cada time
+	Tabela()	
+		Exibir o time seguido de seus valores 
+	
+
+
+1: Erro no objeto teclado dentro do metodo time .
+		contexto 
+		
+		Criei um objeto dentro do main 
+		e 
+		quis usar ele dentro de um metodo private fora do main
+		
+		SOLUÇÃO :
+		
+			adicionei um novo parametro para dentro do metodo time 
+				e quando o metodo for chamado pelo main que passe como parâmetro o objeto escolhido. 
+				
+				
