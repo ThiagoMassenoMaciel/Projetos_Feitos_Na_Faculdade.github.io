@@ -17,7 +17,6 @@ public class Brasilleiraao {
 		Time(Time, QntdTimes);
 		Tabela(Time, Tabela, QntdTimes, Colunas);
 		
-		
 	}
 
 	private static void Time(String[] Time, int QntdTimes) {

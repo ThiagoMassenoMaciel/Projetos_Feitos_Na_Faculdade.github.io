@@ -1,0 +1,78 @@
+Emvez de criar varias variaveis dentro da tabela 
+	Associa��o simples 
+
+__________________________________________________________
+Vers�o 1
+__________________________________________________________
+	Time				Tabela 
+		atributo1			atributo1 
+		atributo2			atributo2 
+		atributo3			atributo3
+		
+		FAZER POR PARTES 
+		CRIAR ESTRUTURA QUE GUARDE OS OBJETOS (TIMES)
+		E ESCREVER OS VETORES e exibir os vetores
+		
+			PERGUNTAS 
+				como eu consigo adicionar valor aos atributos
+				do objeto que est�o dentro de cada posi��o
+				na array ?
+				
+				Usando metodos getters e setters se caso 
+				decidir n estanciar cada objeto com 
+				valores de seus atributos no construtor 
+				assim no momento estanciado
+				
+				link de video do youtube ensinando isto
+					eu primeiro assisto o video 
+					depois volto de novo no video e vou fazer e assistindo e fazendo
+					[](https://youtu.be/fTLvtqma1vs?si=lffHqOdOUdblsHxe)
+				
+__________________________________________________________
+Vers�o 2
+__________________________________________________________
+	Time				Tabela 
+		atributo1			OBJ time - atributo1 -atributo2 -atributo3 show time.atributo1 
+		atributo2				
+		atributo3
+
+__________________________________________________________
+Vers�o 3
+__________________________________________________________
+eu devo criar uma array de objetos no main ou Tabela ? 
+
+	Versão		v3
+	criar array de objs no main
+	Estanciar o obj do tipo Time() para dentro de cada posição do vetor
+	Iterar a Array e colocar o nome de cada time escolhido pelo usuario dentro do atributo nomeTime de cada objeto .
+	
+	Versão		Version3
+	criar array de objs no main
+	Estanciar o obj do tipo Time() para dentro de cada posição do vetor PASSANDO O NOME DO TIME
+	usuário n digita o nome do time
+	
+	Coloquei um novo construtor que somente tem o parametro nome do time o resto é valores 0;
+	Instanciei 20 times
+	Exibir os 20 times e espaçamento para tabela padronizado
+	
+	
+
+	Time				Tabela 
+		atributo1			Array => OBJ time - atributo1 -atributo2 -atributo3 show time.atributo1 
+		atributo2				
+		atributo3
+		
+		
+__________________________________________________________
+PROJETO ORGANIZADO
+
+ProjetoVersao3
+__________________________________________________________
+	
+	
+Tabela.java 
+	esta classe escrever o nome dos times 
+				auto incrementa a classificacao dos times
+				exibe cada time e suas informa��o em cada liha  
+				
+Dentro do projeto CAMPEONATO FUNCIONANDO eu tenho duas classes Partidas.java e Partidass.java explicando um pouco a logica das partidas
