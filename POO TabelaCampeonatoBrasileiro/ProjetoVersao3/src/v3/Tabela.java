@@ -13,6 +13,7 @@ public class Tabela {
 		InputTimes(ArrayTimes , QntdTimes);
 		ShowTimes(ArrayTimes);
 		
+		
 
 	}
 	

@@ -3,3 +3,16 @@ DUVIDAS
 	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os próximos parametros vão ser inicializados com zero ?
 	
 	Na minha classe Time eu coloquei um construtor a mais que so passa por parâmetro nome do time ? eu tiro ?
+	
+	Montar um diagrama igual fiz do projeto que iria fazer do concurso mas acabei nem fazendo com as perguntas 
+	
+	
+		Porque eu preciso desta função ?
+		
+		O que ela faz ? 
+		
+		Quais dados ela precisa ?
+		
+		Quais dados ela vai mudar ?
+		
+		Como ela vai mudar os dados ? 
