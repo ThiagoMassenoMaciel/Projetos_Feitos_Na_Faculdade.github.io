@@ -97,6 +97,8 @@ Tabela.java
 				20 times igual a 19 rodadas 
 				cada rodada tera 10 partidas
 				
+				A B C D
+				
 				
 				1� for ( PERCORRER CADA UMA DAS RODADAS) {
 				        2� for ( PERCORRER CADA UMA DAS DUAS PARTIDAS QUEVAI TER CADA RODADA){
@@ -118,7 +120,10 @@ Tabela.java
 
 				1� For ---loop1---RODADA-3
 																									fazer estes testes dentro de cada partida
-																									      se i + 3 > index valido    vai ser i + (Array.lenght/2)
+																									      se i + 3 > index valido    vai ser (Array.lenght/2)
+																									      NA SITUACAO     Array[1] X Array[2]
+																									      NA SEGUNDA PARTIDA
+																									      				Array[i] X Array[Array.lenght/2]
 										2� for ----loop1--     times[i] X time[i+3]            A x D
 																			
 										2� for ----loop2--     times[i] X time[i+3]            B x C
