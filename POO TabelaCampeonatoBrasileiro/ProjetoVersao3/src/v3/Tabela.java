@@ -6,13 +6,13 @@ public class Tabela {
 
 	public static void main(String[] args) {
 		
-		int QntdTimes = 5;
+		int QntdTimes = 4;
 		//int QntdColunas = 8;
 		Time[] ArrayTimes = new Time[QntdTimes];
 		
 		InputTimes(ArrayTimes , QntdTimes);
 		ShowTimes(ArrayTimes);
-		
+		ShowRodadasPartidas(ArrayTimes);
 		
 
 	}
@@ -29,7 +29,6 @@ public class Tabela {
 			ArrayTimes[indice]= new Time(inputNomeTime);
 			ArrayTimes[indice].Classificacao = indice + 1;
 			//System.out.println(ListaTimes[indice].getNome());
-			
 		}
 /*
   		 oBJrecebeINPUTS.close();	
@@ -38,7 +37,6 @@ public class Tabela {
 		 }
 */		OBJrecebeINPUTS.close();
 		System.out.println("\n\n");
-		
 	}
 	
 	public static void ShowTimes(Time[] ArrayTimes) {
@@ -67,5 +65,42 @@ public class Tabela {
 		return space;
 	}
 	
+	public static void ShowRodadasPartidas(Time[] ArrayTimes) {
+		
+		System.out.println("\n\t\tRodadas e partidas do Campeonato Brasileiro");
+		
+		int quantidadeRodadas =  ArrayTimes.length - 1;
+		int quantidadePartidasEmCadaRodada = ArrayTimes.length/2;
 
+		for( int indiceRodadas = 0 ; indiceRodadas <  quantidadeRodadas; indiceRodadas++) {
+			
+			System.out.println("\nRodada # "+ (indiceRodadas + 1) +"----------");
+			
+			for (int indicePartidas = 0 ; indicePartidas < quantidadePartidasEmCadaRodada ; indicePartidas++) {
+
+/*
+				if ( indiceRodadas == 0) {
+					
+				}else if ( indiceRodadas == 3) {
+					
+				}
+ * */
+				System.out.println("\nPartida # "+ (indicePartidas + 1) );
+				
+				int posicaoArray;
+				
+				if( indicePartidas == quantidadePartidasEmCadaRodada-1) {  //quanto tiver na Partida 2 fazer     Array[i+2] X Array[i+3]
+					posicaoArray = indicePartidas+1;                      //                                     Array[1+1] X Array[(1+1)+1]
+					
+				}else {													 // quanto tiver na Partida 1 fazer     Array[i] X Array[i+1]
+																		//                                      Array[0] X Array[0+1]    
+					posicaoArray = indicePartidas;
+				}
+
+				System.out.println(" "+ ArrayTimes[posicaoArray].nome + " X " + ArrayTimes[posicaoArray + 1 ].nome );
+			}
+			
+			System.out.println("");
+		}	
+	}
 }

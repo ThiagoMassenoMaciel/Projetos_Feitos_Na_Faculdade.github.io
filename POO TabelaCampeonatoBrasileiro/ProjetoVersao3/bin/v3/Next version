@@ -73,44 +73,55 @@ __________________________________________________________
 Tabela.java 
 	esta classe escrever o nome dos times 
 				auto incrementa a classificacao dos times
-				exibe cada time e suas informação em cada linha  
+				exibe cada time e suas informacoes em cada linha  
 				
 				exibir as 3 rodadas para os 4 times 
 					e cada rodada tem 2 partidas
 				
 				
 				
-				// Nº de rodadas = Nº times - 1;
+				// Nï¿½ de rodadas = Nï¿½ times - 1;
 				
-				// Nº Partidas por rodada = Nº Times/2;
+				// Nï¿½ Partidas por rodada = Nï¿½ Times/2;
 				
 				EXEMPLO : 4 times = 3 rodadas e 2 partidas cada rodada.
 				
+				4 times igual a 3 rodadas 
+				cada rodada tera 2 partidas
 				
-				1º for ( PERCORRER CADA UMA DAS RODADAS) {
-				        2º for ( PERCORRER CADA UMA DAS DUAS PARTIDAS QUEVAI TER CADA RODADA){
-				      			DEPENDENDO DE QUAL RODADA ESTA ITERANDO (se é a primeira ou é a terceira) VAI TER UM 
+				
+				8 times igual a 7 rodadas
+				cada rodada tera 4 partidas
+				
+				
+				20 times igual a 19 rodadas 
+				cada rodada tera 10 partidas
+				
+				
+				1ï¿½ for ( PERCORRER CADA UMA DAS RODADAS) {
+				        2ï¿½ for ( PERCORRER CADA UMA DAS DUAS PARTIDAS QUEVAI TER CADA RODADA){
+				      			DEPENDENDO DE QUAL RODADA ESTA ITERANDO (se ï¿½ a primeira ou ï¿½ a terceira) VAI TER UM 
 				        		TESTE  , de acordo com a especifica rodada, PARA CRUZAR O TIME DE UM INDICE DIFERENTE DO PADRONIZADO 
 				        }
 				}
 					
 					
-				1º For ---loop1---RODADA-1
-										2º for ----loop1--     times[i] X time[i+1]            A x B
+				1ï¿½ For ---loop1---RODADA-1
+										2ï¿½ for ----loop1--     times[i] X time[i+1]            A x B
 																									se for na rodada 1 faz isso		depois o  i += 1
-										2º for ----loop2--     times[i] X time[i+1]            C x D
+										2ï¿½ for ----loop2--     times[i] X time[i+1]            C x D
 
-				1º For ---loop2---RODADA-2
-										2º for ----loop1--     times[i] X time[i+2]            A x C
+				1ï¿½ For ---loop2---RODADA-2
+										2ï¿½ for ----loop1--     times[i] X time[i+2]            A x C
 																		
-										2º for ----loop2--     times[i] X time[i+2]            B x D
+										2ï¿½ for ----loop2--     times[i] X time[i+2]            B x D
 
-				1º For ---loop1---RODADA-3
+				1ï¿½ For ---loop1---RODADA-3
 																									fazer estes testes dentro de cada partida
 																									      se i + 3 > index valido    vai ser i + (Array.lenght/2)
-										2º for ----loop1--     times[i] X time[i+3]            A x D
+										2ï¿½ for ----loop1--     times[i] X time[i+3]            A x D
 																			
-										2º for ----loop2--     times[i] X time[i+3]            B x C
+										2ï¿½ for ----loop2--     times[i] X time[i+3]            B x C
 
 				
 Dentro do projeto CAMPEONATO FUNCIONANDO eu tenho duas classes Partidas.java e Partidass.java explicando um pouco a logica das partidas
