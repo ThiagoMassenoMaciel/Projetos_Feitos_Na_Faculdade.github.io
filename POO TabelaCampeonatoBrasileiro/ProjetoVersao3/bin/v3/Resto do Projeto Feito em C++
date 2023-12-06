@@ -125,6 +125,7 @@ void EscreverTabela(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes){
 }
 
 void BubbleSort(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes){
+// Para transformar isso em POO basta perceber que a segunda dimensão da matriz se transforma em o atributo daquele obj daquela posicao do vetor
 	while(QntdTimes > 0){
 		for(int i = 0; i < QntdTimes ; i++){
 			// Se o antecessor for menor que o sucessor , eu troco .
