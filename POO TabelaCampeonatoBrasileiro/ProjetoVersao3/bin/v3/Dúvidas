@@ -20,3 +20,9 @@ DUVIDAS
 
 Quando eu vou comparar maior com menor no antecessor e sucessor dentro da função chamada TrocarPosicão 
 porque o valor que uso para comparar que uso para comparar seja a quantidade de gols pro ? não deveria ser comparado o valor da pontuação ? 
+
+Porque eu uso a matriz    char Time[][4]   ?
+		Na linguagem de programação c n existe variavel string , logo , uma array de nome ficaria uma matriz de char    
+		cada coluna é o nome do time e 
+		cada linha é cada letra da coluna
+
