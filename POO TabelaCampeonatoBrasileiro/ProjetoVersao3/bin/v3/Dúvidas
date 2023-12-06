@@ -1,13 +1,13 @@
 DUVIDAS 
 
-	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os pr�ximos parametros v�o ser inicializados com zero ?
+	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os próximos parametros vão ser inicializados com zero ?
 	
-	Na minha classe Time eu coloquei um construtor a mais que so passa por par�metro nome do time ? eu tiro ?
+	Na minha classe Time eu coloquei um construtor a mais que so passa por parâmetro nome do time ? eu tiro ?
 	
 	Montar um diagrama igual fiz do projeto que iria fazer do concurso mas acabei nem fazendo com as perguntas 
 	
 	
-		Porque eu preciso desta fun��o ?
+		Porque eu preciso desta função ?
 		
 		O que ela faz ? 
 		
@@ -16,3 +16,7 @@ DUVIDAS
 		Quais dados ela vai mudar ?
 		
 		Como ela vai mudar os dados ? 
+
+
+Quando eu vou comparar maior com menor no antecessor e sucessor dentro da função chamada TrocarPosicão 
+porque o valor que uso para comparar que uso para comparar seja a quantidade de gols pro ? não deveria ser comparado o valor da pontuação ? 
