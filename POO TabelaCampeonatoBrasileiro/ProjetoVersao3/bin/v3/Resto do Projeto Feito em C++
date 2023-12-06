@@ -132,7 +132,8 @@ void BubbleSort(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes){
 				TrocaPosicao(Time, Tabela, QntdTimes, i);
 			}else if(Tabela[i][4] == Tabela[i+1][4]){
 			// Se o antecessor for igual o sucessor , eu testo .
-				// Se o 2º valor do antecessor for MENOR que o 2º valor do sucessor , eu troco. 
+				// Se o 2º valor do antecessor for MENOR que o 2º valor do sucessor , eu troco.
+				// Em caso de empate , fica na posição maior aquele com maior vitorias.
 				if(Tabela[i][1] < Tabela[i+1][1]){
 					TrocaPosicao(Time, Tabela, QntdTimes, i);
 				}
