@@ -1,13 +1,13 @@
 DUVIDAS 
 
-	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os próximos parametros vão ser inicializados com zero ?
+	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os pr�ximos parametros v�o ser inicializados com zero ?
 	
-	Na minha classe Time eu coloquei um construtor a mais que so passa por parâmetro nome do time ? eu tiro ?
+	Na minha classe Time eu coloquei um construtor a mais que so passa por par�metro nome do time ? eu tiro ?
 	
 	Montar um diagrama igual fiz do projeto que iria fazer do concurso mas acabei nem fazendo com as perguntas 
 	
 	
-		Porque eu preciso desta função ?
+		Porque eu preciso desta fun��o ?
 		
 		O que ela faz ? 
 		
@@ -16,13 +16,40 @@ DUVIDAS
 		Quais dados ela vai mudar ?
 		
 		Como ela vai mudar os dados ? 
-
-
-Quando eu vou comparar maior com menor no antecessor e sucessor dentro da função chamada TrocarPosicão 
-porque o valor que uso para comparar que uso para comparar seja a quantidade de gols pro ? não deveria ser comparado o valor da pontuação ? 
-
-Porque eu uso a matriz    char Time[][4]   ?
+		
+	Quando eu vou comparar maior com menor no antecessor e sucessor dentro da função chamada Bubble Short
+	porque o valor que uso para comparar seja a quantidade de gols pro ? não deveria ser comparado o valor da pontuação ? 
+				
+		if(Tabela[i][4] < Tabela[i+1][4]){
+			TrocaPosicao(Time, Tabela, QntdTimes, i);
+		}
+		
+	Porque eu uso a matriz    char Time[][4]   ?
 		Na linguagem de programação c n existe variavel string , logo , uma array de nome ficaria uma matriz de char    
 		cada coluna é o nome do time e 
 		cada linha é cada letra da coluna
+	
+	
+	Void trocaPosicao
 
+	O que ela faz ?
+		troca a posição de acordo com o que ?
+		você informa a :
+	
+		array que contem o nome do time 
+		array matriz que contem os valores a ser trocados
+		quanto de times 
+			
+	CRIA UM PEDAÇO QUE TROCA A POSIÇÃO DO SUCESSOR PELO ANTECESSOR
+	
+	
+	Dúvida PorQue quando vai percorrer o valores de cada time inicia o loop com 1 e não com zero '0' ?
+	
+	Quando o professor inicializou a matriz 
+	
+	, ele ja declarou a coluna ordem de classificação , por isso so vai começar a
+	
+	
+	
+	Se eu sei a quantidade de vezes que devo repetir porque devo usar o while ? na função bubble short 
+	trocar os valores na segunda coluna 

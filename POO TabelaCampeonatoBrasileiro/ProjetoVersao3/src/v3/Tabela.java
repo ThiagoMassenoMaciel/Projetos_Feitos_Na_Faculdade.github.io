@@ -14,7 +14,6 @@ public class Tabela {
 		ShowTimes(ArrayTimes);
 		ShowRodadasPartidas(ArrayTimes);
 		
-
 	}
 	
 	public static void InputTimes( Time[] ArrayTimes , int QntdTimes ) {  

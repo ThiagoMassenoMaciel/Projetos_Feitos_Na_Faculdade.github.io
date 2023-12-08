@@ -4,14 +4,14 @@ nome do arquivo no drive compartilhado
 
 		TabelaCampeonato com partidas
 -------------------------------------------
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>30 nov  Até agora eu fiz 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4 horas e 40 minutos para fazer este pedaço
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>30 nov  At� agora eu fiz 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4 horas e 40 minutos para fazer este peda�o
 
 void Times(char Time[][4], int QntdTimes);
 
 void EscreverTabela(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes);
 
-Fazer agora o loop para as partidas e rodas no loop que faça sentido
+Fazer agora o loop para as partidas e rodas no loop que fa�a sentido
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ainda falta 
 
@@ -125,16 +125,11 @@ void EscreverTabela(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes){
 }
 
 void BubbleSort(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes){
-// Para transformar isso em POO basta perceber que a segunda dimensão da matriz se transforma em o atributo daquele obj daquela posicao do vetor
 	while(QntdTimes > 0){
 		for(int i = 0; i < QntdTimes ; i++){
-			// Se o antecessor for menor que o sucessor , eu troco .
 			if(Tabela[i][4] < Tabela[i+1][4]){
 				TrocaPosicao(Time, Tabela, QntdTimes, i);
 			}else if(Tabela[i][4] == Tabela[i+1][4]){
-			// Se o antecessor for igual o sucessor , eu testo .
-				// Se o 2º valor do antecessor for MENOR que o 2º valor do sucessor , eu troco.
-				// Em caso de empate , fica na posição maior aquele com maior vitorias.
 				if(Tabela[i][1] < Tabela[i+1][1]){
 					TrocaPosicao(Time, Tabela, QntdTimes, i);
 				}
