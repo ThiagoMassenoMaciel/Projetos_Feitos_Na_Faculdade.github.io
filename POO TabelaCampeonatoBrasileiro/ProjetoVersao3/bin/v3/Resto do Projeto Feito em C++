@@ -1,17 +1,17 @@
 Arquivo em C do resto do trabalho
-
+a
 nome do arquivo no drive compartilhado
 
 		TabelaCampeonato com partidas
 -------------------------------------------
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>30 nov  Até agora eu fiz 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4 horas e 40 minutos para fazer este pedaço
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>30 nov  Atï¿½ agora eu fiz 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4 horas e 40 minutos para fazer este pedaï¿½o
 
 void Times(char Time[][4], int QntdTimes);
 
 void EscreverTabela(char Time[][4], int Tabela[][ColunasTabela], int QntdTimes);
 
-Fazer agora o loop para as partidas e rodas no loop que faça sentido
+Fazer agora o loop para as partidas e rodas no loop que faï¿½a sentido
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ainda falta 
 
