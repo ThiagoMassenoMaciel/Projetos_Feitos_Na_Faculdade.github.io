@@ -1,9 +1,9 @@
 DUVIDAS 
 
 	Sobre a classe time , se quando estanciado objeto time a pessoa somente passar por parametro o primeiro do construtor , isso significa que os pr�ximos parametros v�o ser inicializados com zero ?
-	
+	 sim 
 	Na minha classe Time eu coloquei um construtor a mais que so passa por par�metro nome do time ? eu tiro ?
-	
+	 não precisava , mas não tire .
 	Montar um diagrama igual fiz do projeto que iria fazer do concurso mas acabei nem fazendo com as perguntas 
 	
 	
@@ -16,13 +16,7 @@ DUVIDAS
 		Quais dados ela vai mudar ?
 		
 		Como ela vai mudar os dados ? 
-		
-	Quando eu vou comparar maior com menor no antecessor e sucessor dentro da função chamada Bubble Short
-	porque o valor que uso para comparar seja a quantidade de gols pro ? não deveria ser comparado o valor da pontuação ? 
-				
-		if(Tabela[i][4] < Tabela[i+1][4]){
-			TrocaPosicao(Time, Tabela, QntdTimes, i);
-		}
+
 		
 	Porque eu uso a matriz    char Time[][4]   ?
 		Na linguagem de programação c n existe variavel string , logo , uma array de nome ficaria uma matriz de char    
@@ -53,3 +47,46 @@ DUVIDAS
 	
 	Se eu sei a quantidade de vezes que devo repetir porque devo usar o while ? na função bubble short 
 	trocar os valores na segunda coluna 
+	
+	
+==============================================================================================================
+			Não consigo fazer o input dos valores inteiros dos pontoss de cada time para cada partida
+Quando aparece a vez do usuario digitar o valor aparecer um Exception in thread "main" java.util.NoSuchElementException
+
+1h criado metodos
+	-Placares
+	-GolsProSofridos
+	-VitoriasDerrotasEmpates
+33' tentando entender - n fui no stack overflow
+1H30' TENTANDO ENTENDER fui no stackOverflow
+
+			Sera que o erro seja pq eu n estou initialized the number ? não é isso
+==============================================================================================================
+Rodada -----------1----------
+
+Partida #1
+ a X b
+Digite quantos gols fez o time a : 
+Exception in thread "main" java.util.NoSuchElementException: No line found
+
+-------------------------------------------------------------------------------
+link do  stack overflow https://pt.stackoverflow.com/questions/209571/erro-nosuchelementexception-ao-capturar-entrada-de-dados-com-scanner?newreg=f204e0a5fc2f4276bd4dd9bd33d7c897
+-------------------------------------------------------------------------------
+declarar UMA variavel de classe O objeto para entrada de dados SER USADO PARA TODA VEZ QUE FOR PRECISO
+toda vez que for usar denovo o objeto lembrar de colocar    OBJETO.nextLine()
+															Pois toda vez que você clicar na tecla enter 
+															e tiver algum nextLine() , não vai pular  
+															a proxima frase que você deseja capturar, pois vai ter 
+															capturado o \n ja que toda vez clicado no ENTER 
+															é como se no console escrevesse \n
+															
+Ou você escolhe não fechar objeto do tipo scanner           OBJETO.close
+			pois quando fechar , é encerrando tmbm o padrão de entrada de dados globalmente . Por isso disparou NoSuchElementException ja que o OBJ foi encerrado
+ou toda vez antes de você reutilizar o mesmo objeto scanner para outro input , antes usar
+															OBJETO.clear()
+===================================================================================
+
+
+
+
+uma dúvida 

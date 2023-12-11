@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Tabela {
 
+	public static Scanner OBJrecebeINPUTS = new Scanner(System.in);
 	public static void main(String[] args) {
 		
 		int QntdTimes = 4;
@@ -13,12 +14,13 @@ public class Tabela {
 		InputTimes(ArrayTimes , QntdTimes);
 		ShowTimes(ArrayTimes);
 		ShowRodadasPartidas(ArrayTimes);
+		ShowTimes(ArrayTimes); // depois do placar
 		
 	}
 	
 	public static void InputTimes( Time[] ArrayTimes , int QntdTimes ) {  
 		
-		Scanner OBJrecebeINPUTS = new Scanner(System.in);
+		
 		
 		for ( int indice = 0 ; indice < ArrayTimes.length ; indice++ ) {
 			
@@ -28,13 +30,15 @@ public class Tabela {
 			ArrayTimes[indice]= new Time(inputNomeTime);
 			ArrayTimes[indice].Classificacao = indice + 1;
 			//System.out.println(ListaTimes[indice].getNome());
+			
+			 
 		}
 /*
   		 oBJrecebeINPUTS.close();	
 		 for( Time i : ListaTimes) {
 			 System.out.println(i.getNome());
 		 }
-*/		OBJrecebeINPUTS.close();
+*/		//OBJrecebeINPUTS.close();
 		System.out.println("\n\n");
 	}
 	
@@ -42,7 +46,7 @@ public class Tabela {
 		System.out.println("\n\t\t\tCampeonato Brasileiro");
 		System.out.println("\n"+ Spacing("") + "Classificacao\tVit\tDer\tEmp\tGP\tGS\tSG\tPontuacao");
 		for( Time i : ArrayTimes) {
-			System.out.print( i.nome + Spacing(i.nome)+ "\t" +
+			System.out.println( i.nome + Spacing(i.nome)+ "\t" +
 														i.Classificacao       + "\t\t" +
 														i.QuantidadeVitoria   + "\t" +
 														i.QuantidadeDerrotas  + "\t" +
@@ -51,7 +55,6 @@ public class Tabela {
 														i.GolSofrido	      + "    " + "\t" +
 														i.SaldoGols 		  + "\t" +
 														i.Pontuacao			  + "\t"  );
-			System.out.println("");
 		}	
 	}
 	
@@ -79,7 +82,7 @@ public class Tabela {
 
 				if ( indiceRodadas == 0) {
 //-------------------------------------------------------------------------------------------------
-					System.out.println("\nPartida #"+ (indicePartidas + 1) );
+					System.out.println("\n-------------------Partida #"+ (indicePartidas + 1) );
 					
 					int posicaoArray;
 					
@@ -93,10 +96,12 @@ public class Tabela {
 
 					System.out.println(" "+ ArrayTimes[posicaoArray].nome + " X " + ArrayTimes[posicaoArray + 1 ].nome );
 					
+					PlacarEmCadaPartida(    ArrayTimes[posicaoArray]        ,       ArrayTimes[posicaoArray + 1 ]);
+					
 
 				}else if ( indiceRodadas == 1) {
 //-------------------------------------------------------------------------------------------------
-					System.out.println("\nPartida #"+ (indicePartidas + 1) );
+					System.out.println("\n-------------------Partida #"+ (indicePartidas + 1) );
 					
 					int posicaoArray;
 					posicaoArray = indicePartidas;
@@ -108,10 +113,11 @@ public class Tabela {
 					//                                     Array[1] X Array[1+2]    	
 					
 					System.out.println(" "+ ArrayTimes[posicaoArray].nome + " X " + ArrayTimes[posicaoArray + 2 ].nome );
+					PlacarEmCadaPartida(    ArrayTimes[posicaoArray]        ,       ArrayTimes[posicaoArray + 2 ]);
 					
 				}else if ( indiceRodadas == 2) {
 //-------------------------------------------------------------------------------------------------
-					System.out.println("\nPartida #"+ (indicePartidas + 1) );
+					System.out.println("\n-------------------Partida #"+ (indicePartidas + 1) );
 					
 					int posicaoArray;
 					if( indicePartidas == quantidadePartidasEmCadaRodada-1) {         // Perguntei se é a partida 2 
@@ -120,6 +126,9 @@ public class Tabela {
 																					  // Então eu coloco ela ----> dentro da variavel posicaoArray ?
 						
 						System.out.println(" "+ ArrayTimes[indicePartidas].nome + " X " + ArrayTimes[posicaoArray].nome ); // Array[1] X Array[2] 
+						
+						PlacarEmCadaPartida(    ArrayTimes[indicePartidas]        ,       ArrayTimes[posicaoArray]);
+						
 					}else {
 
 						posicaoArray = indicePartidas;
@@ -130,11 +139,59 @@ public class Tabela {
 						// quanto tiver na Partida 2 fazer     Array[i] X Array[O indice do elemento sucessor de Array[i] ]
 						//                                     Array[1] X Array[2]    	
 						
-						System.out.println(" "+ ArrayTimes[posicaoArray].nome + " X " + ArrayTimes[posicaoArray+3].nome ); // Array[0] X Array[0+3]
+						System.out.println(" "+ ArrayTimes[posicaoArray].nome + " X " + ArrayTimes[posicaoArray + 3 ].nome ); // Array[0] X Array[0+3]
+						
+						PlacarEmCadaPartida(    ArrayTimes[posicaoArray]        ,       ArrayTimes[posicaoArray + 3 ]);
 					}
 				}
 			}
 			System.out.println("");
 		}	
 	}
+
+	public static void PlacarEmCadaPartida(Time mandante , Time visitante) {
+		
+		System.out.println("Digite quantos gols fez o time "+ mandante.nome + " : ");
+		int golsProMandante = OBJrecebeINPUTS.nextInt();
+		
+		System.out.println("Digite quantos gols fez o outro time "+ visitante.nome + " : ");
+		int golsProVisitante = OBJrecebeINPUTS.nextInt();
+		 
+		GolsProSofridos( mandante , golsProMandante, visitante , golsProVisitante );
+		VitoriaEmpateDerrota(mandante, golsProMandante, visitante, golsProVisitante);
+		
+		 //OBJrecebeINPUTS.nextLine(); // // para depois de apertar em enter n pular proximo input
+		
+	}
+	
+	public static void GolsProSofridos(Time mandante , int golMandante , Time visitante, int golVisitante) {
+		mandante.GolPro += golMandante;
+		mandante.GolSofrido += golVisitante;
+		
+		visitante.GolPro += golVisitante;
+		visitante.GolSofrido += golMandante;
+		
+		
+	}
+	
+	public static void VitoriaEmpateDerrota(Time mandante , int golMandante , Time visitante, int golVisitante) {
+		if ( golMandante > golVisitante) {
+			
+			mandante.QuantidadeVitoria   += 1;
+			visitante.QuantidadeDerrotas +=1;
+			
+		}else if( golMandante < golVisitante) {
+			
+			mandante.QuantidadeDerrotas += 1;
+			visitante.QuantidadeVitoria += 1;	
+			
+		}else if ( golMandante == golVisitante) {
+			
+			mandante.QuantidadeEmpate += 1;
+			visitante.QuantidadeEmpate += 1;
+			
+		}
+	}
+	
+	
 }

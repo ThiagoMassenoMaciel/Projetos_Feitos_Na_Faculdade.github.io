@@ -130,3 +130,46 @@ Tabela.java
 
 				
 Dentro do projeto CAMPEONATO FUNCIONANDO eu tenho duas classes Partidas.java e Partidass.java explicando um pouco a logica das partidas
+
+
+-----------------------------------------------
+depois de exibir os time que vão jogar nesta partida vou perguntar à cada um, quantos gols fizeram  .
+
+nome do metodo
+ºparamentros
+o que faz este metodo
+
+
+			metodo Placares
+			
+		    º objeto do time mandante
+		    º objeto do time visitante
+		    º gols do mandante 
+		    º gols do visitante 
+		    
+		    atualizar o valor dentro das variaveis de cada time desta partida , depois de receber o input do usuario
+		    
+		    vai chamar as funções 
+		    
+		    GolProSofridos
+		    VitoriaEmpateDerrota
+		    
+		    
+		metodo GolsProSofridos
+			º OBJ time mandante
+			º Gols Pro do time Mandante
+			º OBJ time visitante
+			º Gols Pro do time visitante
+			
+			atualizar incrementando o valor de gols de cada partida jogada
+			
+			
+		metodo VitoriasDerrotasEmpates
+			º OBJ time mandante
+			º Gols Pro do time Mandante
+			º OBJ time visitante
+			º Gols Pro do time visitante
+			
+			atualizar incrementando o tanto de vitorias,derrotas e ou empate de cada time da partida jogada
+			
+

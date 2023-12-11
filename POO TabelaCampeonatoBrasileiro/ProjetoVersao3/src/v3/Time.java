@@ -23,23 +23,6 @@ public class Time {
 		this.Pontuacao          = 0;
 	}
 	
-	
-	public Time ( String nome , int Classificacao, int QuantidadeVitoria, 
-								int QuantidadeEmpate , int QuantidadeDerrotas, 
-								int GolPro , int GolSofrido, int SaldoGols, int Pontuacao) {
-		this.nome = nome;
-		
-		//this.Classificacao      = Classificacao;
-		this.QuantidadeVitoria  = QuantidadeVitoria; 
-		this.QuantidadeEmpate   = QuantidadeEmpate ;
-		this.QuantidadeDerrotas = QuantidadeDerrotas;
-		this.GolPro             = GolPro;
-		this.GolSofrido         = GolSofrido;
-		this.SaldoGols          = SaldoGols;
-		this.Pontuacao          = Pontuacao;
-		
-	}
-
 
 	public String getNome() {
 		return nome;
