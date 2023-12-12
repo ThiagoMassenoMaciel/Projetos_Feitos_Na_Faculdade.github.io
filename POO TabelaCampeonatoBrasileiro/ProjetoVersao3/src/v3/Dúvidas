@@ -87,6 +87,14 @@ ou toda vez antes de você reutilizar o mesmo objeto scanner para outro input , 
 ===================================================================================
 
 
-
-
-uma dúvida 
+Porque a classificação foi trocada também , sendo que eu so preciso mudar todos os atributos , menos a classificação ?
+	pois eu so troquei o objeto e foi junto a mesa classificação .
+		devo ir na classe que troca a posição 
+			e depois do passo que troca a posição devo alterar o numro de classificação 
+			correspondente com o (indice) o cupado pelo objeto trocado + 1 para 
+			n começar a classificação do 0
+Porque a entrada de dados so funcionou até a terceira rodada ? Porque so foi feito combinações apenas com os 12 primeiros times ?
+	pelo fato de eu ter colocado numeros fixos , so com o exemplo de 4 times
+	se rodada for 0   fazer isso (caso especifico da 1º rodada )
+	se rodada for 1   fazer isso (caso especifico da 2º rodada )
+	se rodada for 2   fazer isso (caso especifico da 3º rodada )
