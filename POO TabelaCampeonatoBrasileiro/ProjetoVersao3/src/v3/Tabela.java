@@ -225,7 +225,7 @@ public class Tabela {
 		
 		while ( quantidadeTimes > 0) {
 			
-			for ( int indice = 0 ; indice < quantidadeTimes; indice++) {
+			for ( int indice = 0 ; indice < quantidadeTimes-1; indice++) {
 				
 				if ( ArrayTimes[indice].Pontuacao < ArrayTimes[indice+1].Pontuacao ) {
 					TrocarPosicao(ArrayTimes , indice);
