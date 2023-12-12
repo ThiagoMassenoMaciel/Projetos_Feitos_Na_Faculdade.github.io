@@ -172,4 +172,29 @@ o que faz este metodo
 			
 			atualizar incrementando o tanto de vitorias,derrotas e ou empate de cada time da partida jogada
 			
-
+		metodo PontuacaoFinal
+			ºToda Array dos objetos time
+			
+			inserir o valor da pontuação calculado para cada time
+			
+		metodo SaldoGols
+			ºToda Array dos objetos time
+			
+			inserir o valor do saldo de gols para cada um dos times		
+			
+		metodo OrdenarClassificacao
+			ºToda Array dos objetos time
+			
+			testar quando vai trocar os objetos de posição da array de acordo com a pontuação, vitoria , saldo de gols , gols pro em ordem decrescente
+			
+			precisa de outra funcão e vai passar por parametro 
+			a array com os objtos para ser ordenado 
+			e 
+			a posição do atual OBJ que vai trocar de posição com o seu sucessor
+			
+		metodo TrocarPosicao
+			ºToda Array dos OBJ time
+			ºIndice do antecessor que vai trocar com o sucessor
+			
+----------------------------- 1h43'
+----------------------------- 21h25 até agora 

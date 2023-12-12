@@ -15,7 +15,12 @@ public class Tabela {
 		ShowTimes(ArrayTimes);
 		ShowRodadasPartidas(ArrayTimes);
 		ShowTimes(ArrayTimes); // depois do placar
-		
+		SaldoGols(ArrayTimes );
+		ShowTimes(ArrayTimes);// depois de colocar o saldo de gols
+		PontuacaoFinal(ArrayTimes );
+		ShowTimes(ArrayTimes);// depois de calcular Pontuação Final
+		OrdenarClassificacao(ArrayTimes);
+		ShowTimes(ArrayTimes);// depois de ordenada classificação
 	}
 	
 	public static void InputTimes( Time[] ArrayTimes , int QntdTimes ) {  
@@ -193,5 +198,68 @@ public class Tabela {
 		}
 	}
 	
+	public static void SaldoGols( Time[] ArrayTimes ) {
+		for( int indice = 0 ; indice < ArrayTimes.length; indice++) {
+			
+			ArrayTimes[indice].SaldoGols =(  ArrayTimes[indice].GolPro - ArrayTimes[indice].GolSofrido  );
+			
+		}
+	}
 	
+	public static void PontuacaoFinal( Time[] ArrayTimes ) {
+		for( int indice = 0 ; indice < ArrayTimes.length; indice++) {
+			
+			ArrayTimes[indice].Pontuacao =(  ArrayTimes[indice].QuantidadeVitoria * 3 )
+											+ 
+										  (  ArrayTimes[indice].QuantidadeEmpate * 1  ) 
+										    +
+										  ( ArrayTimes[indice].QuantidadeDerrotas* 0  ) 
+					;
+			
+		}
+	}
+	
+	public static void OrdenarClassificacao(  Time[] ArrayTimes  ) {
+		
+		int quantidadeTimes = ArrayTimes.length;
+		
+		while ( quantidadeTimes > 0) {
+			
+			for ( int indice = 0 ; indice < quantidadeTimes; indice++) {
+				
+				if ( ArrayTimes[indice].Pontuacao < ArrayTimes[indice+1].Pontuacao ) {
+					TrocarPosicao(ArrayTimes , indice);
+					
+				}else if( ArrayTimes[indice].Pontuacao == ArrayTimes[indice+1].Pontuacao ) {
+					
+					
+					if(   ArrayTimes[indice].QuantidadeVitoria < ArrayTimes[indice+1].QuantidadeVitoria) {
+						TrocarPosicao(ArrayTimes , indice);
+					}else if(ArrayTimes[indice].QuantidadeVitoria == ArrayTimes[indice+1].QuantidadeVitoria) {
+						
+						  if(ArrayTimes[indice].SaldoGols < ArrayTimes[indice+1].SaldoGols ) {
+							  TrocarPosicao(ArrayTimes , indice);
+							  
+						  }else if(ArrayTimes[indice].SaldoGols == ArrayTimes[indice+1].SaldoGols ) {
+							  
+							  	if(ArrayTimes[indice].GolPro < ArrayTimes[indice+1].GolPro) {
+							  		TrocarPosicao(ArrayTimes , indice);
+							  	}
+							  
+						  }
+							
+					}
+				}
+			}
+			
+			quantidadeTimes--;
+		}
+	}
+	
+	public static void TrocarPosicao( Time[] ArrayTimes , int indice) {
+		Time Aux ;
+		Aux = ArrayTimes[indice];
+		ArrayTimes[indice] = ArrayTimes[indice+1];
+		ArrayTimes[indice+1] = Aux; 
+	}
 }
