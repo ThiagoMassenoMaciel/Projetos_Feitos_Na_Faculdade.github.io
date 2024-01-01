@@ -1,0 +1,11 @@
+Um jeito importante de fazer mais escrevendo menos ( mecanismos de reuso do código que  é fundamental ) 
+	Associação     -   qual objeto esta relacionado com qual objeto ?
+	Agregação      -   qual é o objeto que forma um pedaço outro objeto ?
+	Composição     -   quais objetos que formam outro objeto ?
+	
+	O simbolo de relacionamento fica na classe que tem o objeto principal
+	
+	|Classe 1|º-------|Classe 2|
+	
+	objeto principal gerado pela classe1
+	objeto parte gerado pela classe2

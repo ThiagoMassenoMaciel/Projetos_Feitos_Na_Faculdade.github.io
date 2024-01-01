@@ -1,0 +1,101 @@
+17h30
+
+Agenda
+	Agregação
+		conceito 
+		exemplos conceito
+		exemplos code/ práticos
+	Composição
+		conceito
+		exemplos conceito
+		exemplos práticos/ code
+					pdf que explica a diferença entre agregação e composição 
+					exemplo do chat bing 
+	Arrays de Objetos
+		Estudante estudantes[];    NomeDaClasse NomeVariavel[];
+	Agregação usando arrays
+		manipulando arrays em agregação
+	Coleções
+	Listas
+	ArrayList
+	Mapeamentos
+	HashMap
+
+
+1.Explique o conceito de Agregação, apresente um exemplo e forneça o diagrama UML e o código do exemplo apresentado.
+
+	
+	É agregação é uma relação entre objetos onde um objeto é composto por outros objetos 
+
+	É o relacionamento em que um ou mais elementos faz parte de um grupo/ elemento principal. 
+
+	E os elementos independe do elemento principal para existir.
+
+	Isso quer dizer que estes elementos podem também fazer parte de outro objeto principal
+
+	a relação entre elemento e o grupo tem dois tipos :
+	-------Agregação
+	-------Composição
+
+	exemplos
+Um objeto feito de outros objetos (em java isso é por referência e n de objeto para objeto)
+
+Um objeto é constituido por referências de outros objetos
+Um objeto é constituido por ponteiros que apontam para outros objetos
+
+Um objeto pedaçado em referências de outros objetos
+Um objeto principal é constituido com referências de outros objetos
+
+Turma é um conjunto de estudantes
+
+Elemento principal              
+		Turma
+Elementos que juntos formam o elemento principal = pedaços do elemento principal
+		estudante
+
+		EX : Turma é uma agregação de estudantes
+		
+		Uma turma é composta de estudantes;
+		Uma empresa é composta de departamentos;
+		Um aparelho é composto de peças	
+		Programa é composto de instruções/comandos;
+		Corpo humano é composto de órgãos, que é composto de células.
+		
+		
+		
+2.Qual a diferença entre Agregação e Composição? 
+
+	Composição os elementos são dependentes do elemento principal 
+	
+	È o tipo de relacionamento que um objeto é formado apartir de outros objetos dependentes.
+	
+	Isso quer dizer que os objetos so existem se existir o objeto principal 
+	
+	Ex: Pessoa tem número de cpf, identidadeRG unico , 
+	cpf e o RG so é valido se a pessoa existir . 
+	
+	neste exemplo os documentos são as provas jurídicas que constituem uma pessoa física
+	documentos = elementos 
+	pessoa     = elemento principal
+	
+	os documentos de uma pessoa não pode ter relação com os documentos de outra pessoa .
+	
+	
+	mais exemplos : troque a palavra existir por ( funciona / funcionar)
+
+Carro e Roda: Um carro é composto por quatro rodas. As rodas não podem existir sem o carro e são dependentes dele.
+
+Casa e Cômodo: Uma casa é composta por vários cômodos, como quartos, banheiros e cozinhas. Os cômodos não podem existir sem a casa e são dependentes dela.
+
+Pessoa e Coração: Uma pessoa é composta por um coração. O coração não pode existir sem a pessoa e é dependente dela.
+
+Bicicleta e Roda: Uma bicicleta é composta por duas rodas. As rodas não podem existir sem a bicicleta e são dependentes dela.
+
+Computador e Placa-mãe: Um computador é composto por uma placa-mãe. A placa-mãe não pode existir sem o computador e é dependente dele.
+
+			Em programação orientada a objetos, associação, agregação e composição são termos que descrevem os relacionamentos entre as classes. A associação é uma relação entre duas classes que não têm dependência entre si, mas estão relacionadas de alguma forma. Por exemplo, a relação entre um professor e seus alunos. Um aluno pode ter vários professores e um professor pode ter vários alunos. Não há propriedade ou dependência entre eles. A relação é eventual 1.
+
+			A agregação é uma relação de um para muitos, onde um objeto é proprietário de outros, mas não há dependência, então ambos podem existir mesmo que a relação não se estabeleça. Por exemplo, a relação entre os professores e os departamentos. Departamentos podem ter vários professores e um professor só pode estar vinculado a um único departamento. Mas eles são independentes. Um professor pode existir sem vínculo com um departamento e este não depende de professores para existir 1.
+
+			A composição é uma agregação que possui dependência entre os objetos, ou seja, se o objeto principal for destruído, os objetos que o compõe não podem existir mais. Há a chamada relação de morte. Por exemplo, a relação entre um carro e suas rodas. Se o carro for destruído, as rodas também serão 1
+	

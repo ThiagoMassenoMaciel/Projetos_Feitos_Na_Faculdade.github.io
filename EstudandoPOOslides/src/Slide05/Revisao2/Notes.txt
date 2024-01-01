@@ -1,0 +1,22 @@
+Exercicio 2 de Revisão 
+
+2.Qual a diferença entre Agregação e Composição? 
+
+	o tanto de dependência que um objeto vai ter do outro , no mesmo relacionamento.
+	Agregação - um objeto independe do outro para existir , se apagar o elemento principal - não apagou os elementos parte
+	Composição - um objeto depende do outro para existir , se apagar o elemento principal - apagou os elementos parte
+	
+	é aquela lógica da entidade fraca - pois ela so vai existir se houver a outra
+	
+	exemplo : fiz dois exemplos
+	
+	Uma classe  cria o histórico do pedido                            pedido
+		outra classe cria as informações do item que foi pedido		  ItemPedido
+		
+	Uma classe é o elemento principal                                 carro
+		Outra classe é elemento secundário(objeto parte)              roda
+			Outra classe é elemento secundário(outro objeto parte)    motor
+			
+	so vai ser estanciado os objetos parte depois que o objeto todo for estanciado
+	
+	demorei  50' minutos

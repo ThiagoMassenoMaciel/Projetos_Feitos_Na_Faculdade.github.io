@@ -1,0 +1,18 @@
+Questão um da Revisão do Slide 05 
+
+Explique o conceito de Agregação, apresente um exemplo e forneça o diagrama UML e o código do exemplo apresentado.
+
+	 agregação é uma relação entre objetos onde um objeto é composto por outros objetos 
+	 E os elementos independe do elemento principal para existir.
+	 Na agregação, se um objeto agregador for eliminado, os objetos agregados continuarão a existir.
+	 
+	 Exemplo 
+	 	Turma é uma agregação de estudantes
+	 	
+	 	objeto Turma       -  Elemento principal
+	 	objetos Estudante  -  Elementos independentes( em java não tem objeto dentro de objeto, tem a referência deles através da lógicas dos ponteiros)
+	 	
+	 	
+	 Diagrama UML imgDIAGRAMA_R_1.png
+
+Demorei 1h para responder
