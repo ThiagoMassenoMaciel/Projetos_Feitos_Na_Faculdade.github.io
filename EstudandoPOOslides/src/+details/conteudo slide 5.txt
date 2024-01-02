@@ -27,10 +27,24 @@ Agenda do conteudo que tem no slide
 		Principais operações para listas
 			os metodos para manipular ela
 		inserindo elementos no array
-		percorrendo um array
-		ArrayList Genérico
-			pg. 31. se o tipo de elemento for diferente de Object tem que fazer casting CONVERTENDO O ELEMENTO PARA OBJECT 
-		ArrayList de Tipos Específicos	
+		ArrayList de Tipos Específicos
+		percorrendo um ArrayList
+			For-Each
+			Get(index)
+			ArrayList Genérico (n precisa mais converter depois da versao 1.5 java)
+				pg. 31. se o tipo de elemento for diferente de Object tem que fazer casting CONVERTENDO O ELEMENTO PARA OBJECT 
+			List Iterator ( pesquisar como ela funciona por baixo dos panos)acho que começa pelo nó cabeça
+				Percorrendo um ArrayList usando iterator
+				
+					interface ListIterator {
+						boolean hasNext();
+						boolean hasPrevious();
+						Object next();
+						Object previous();
+						int nextIndex();
+						int previousIndex();
+					}
+						
 		
 		ArrayList
 	Mapeamentos
@@ -1046,3 +1060,6 @@ Exercício de revisão 4
 								Neste exemplo, criamos uma lista de strings usando a classe Vector. A classe Vector é sincronizada, o que significa que é thread-safe. Isso significa que várias threads podem acessar um objeto Vector ao mesmo tempo sem causar problemas de concorrência. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, criamos duas threads que acessam a lista ao mesmo tempo. A primeira thread adiciona 100 maçãs à lista, enquanto a segunda thread adiciona 100 bananas à lista. Por fim, imprimimos a lista para verificar se os elementos foram adicionados corretamente.
 								
 								O contexto em que as threads estão usando a lista é um ambiente multithread. Nesse ambiente, várias threads podem acessar a lista ao mesmo tempo. Se a lista não for thread-safe, isso pode levar a problemas de concorrência, como condições de corrida e deadlocks. Para evitar esses problemas, é importante usar uma implementação thread-safe da interface List, como o Vector.
+								
+======================================================================================================================================
+interface Itarator permite percorrer a Lista em ambas as direções
