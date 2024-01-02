@@ -50,6 +50,4 @@ o vector é sincronizado e por isso é mais lento , porfavor explique isso com m
 quero que cite um exemplo de codigo java em um ambiente multithread onde tem várias threads  acessando a lista ao mesmo tempo  com a interface list implementando na classe vector . Explique o contexto de o porque do thread esta usando a lista neste contexto.
 
 
-demorei 4horas e 26 minutos 
-
-12h56
+demorei 4horas e 54 minutos 
