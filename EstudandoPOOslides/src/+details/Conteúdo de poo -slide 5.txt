@@ -9,3 +9,26 @@ Um jeito importante de fazer mais escrevendo menos ( mecanismos de reuso do cód
 	
 	objeto principal gerado pela classe1
 	objeto parte gerado pela classe2
+	
+	quando vai fazer Agregação estancia os objetos separadamente
+	quando vai fazer Composição é estanciado um objeto dentro da instancia do outro pela variavel de referência
+	
+	dimensionar array é definir o seu tamanho
+	redimensionar com outra array usando a classe Arrays.copyOf().
+	
+	
+	Tipos de relacionamento 
+		Associação um objeto dentro de outro
+		Agregação  um objeto independente esta relacionado com outo pois ambos fazem parte do todo elemento principal
+		Composicão um objeto dependente esta relacionado com outro pois ambos fazem parte  do todo elemento principal
+		
+	Coleção    varios objetos ou elementos fazem parte do mesmo grupo ou conjunto ( é uma estrutura de dados)
+		
+			   Tipos de coleção
+			   		Set
+			   			quando tem elementos únicos que não repete
+			   		List
+			   			quando tem elementos organizados linearmente em uma seuqência
+			   		Map
+			   			quando tem chave mapeado para valores
+		 

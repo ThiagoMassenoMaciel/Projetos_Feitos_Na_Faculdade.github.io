@@ -1,0 +1,13 @@
+Exercício de revisão 4 
+
+4.Arrays são dimensionáveis?
+
+	em java sim , pode escolher o tamanho na array mas é um valor fixo que não pode ser alterado.
+	o que pode ser redimensionado é quando usa Arraylist(isso é um tipo de dado dentro do java.)
+	
+	exemplo : estanciei  6 arrays e dimensionei elas
+	
+	ja que não pode mudar o tamanho definido da array , 
+	cria outra array com tamanho diferente e repasse os elementos da primeira para segunda array.
+	
+	demorei 30'

@@ -1,6 +1,6 @@
 17h30
 
-Agenda
+Agenda do conteudo que tem no slide
 	Agregação
 		conceito 
 		exemplos conceito
@@ -13,12 +13,28 @@ Agenda
 					exemplo do chat bing 
 	Arrays de Objetos
 		Estudante estudantes[];    NomeDaClasse NomeVariavel[];
+		
 	Agregação usando arrays
+		representação array em memória quando estanciado e com ou sem valor atribuido
 		manipulando arrays em agregação
+		Arrays de objetos e agregação
+		Tipos de array de objeto que podem ser redimensionados
 	Coleções
+		hierarquia das Classes
 	Listas
-	ArrayList
+		caracteristicas
+		diferencia graficamente desta array dinâmica com a array estática
+		Principais operações para listas
+			os metodos para manipular ela
+		inserindo elementos no array
+		percorrendo um array
+		ArrayList Genérico
+			pg. 31. se o tipo de elemento for diferente de Object tem que fazer casting CONVERTENDO O ELEMENTO PARA OBJECT 
+		ArrayList de Tipos Específicos	
+		
+		ArrayList
 	Mapeamentos
+		
 	HashMap
 
 
@@ -65,6 +81,9 @@ Elementos que juntos formam o elemento principal = pedaços do elemento principa
 		
 2.Qual a diferença entre Agregação e Composição? 
 
+	quando vai fazer Agregação estancia os objetos separadamente
+	quando vai fazer Composição é estanciado um objeto dentro do outro pela variavel de referência
+
 	Composição os elementos são dependentes do elemento principal 
 	
 	È o tipo de relacionamento que um objeto é formado apartir de outros objetos dependentes.
@@ -82,20 +101,948 @@ Elementos que juntos formam o elemento principal = pedaços do elemento principa
 	
 	
 	mais exemplos : troque a palavra existir por ( funciona / funcionar)
-
-Carro e Roda: Um carro é composto por quatro rodas. As rodas não podem existir sem o carro e são dependentes dele.
-
-Casa e Cômodo: Uma casa é composta por vários cômodos, como quartos, banheiros e cozinhas. Os cômodos não podem existir sem a casa e são dependentes dela.
-
-Pessoa e Coração: Uma pessoa é composta por um coração. O coração não pode existir sem a pessoa e é dependente dela.
-
-Bicicleta e Roda: Uma bicicleta é composta por duas rodas. As rodas não podem existir sem a bicicleta e são dependentes dela.
-
-Computador e Placa-mãe: Um computador é composto por uma placa-mãe. A placa-mãe não pode existir sem o computador e é dependente dele.
+	
+	Carro e Roda: Um carro é composto por quatro rodas. As rodas não podem existir sem o carro e são dependentes dele.
+	
+	Casa e Cômodo: Uma casa é composta por vários cômodos, como quartos, banheiros e cozinhas. Os cômodos não podem existir sem a casa e são dependentes dela.
+	
+	Pessoa e Coração: Uma pessoa é composta por um coração. O coração não pode existir sem a pessoa e é dependente dela.
+	
+	Bicicleta e Roda: Uma bicicleta é composta por duas rodas. As rodas não podem existir sem a bicicleta e são dependentes dela.
+	
+	Computador e Placa-mãe: Um computador é composto por uma placa-mãe. A placa-mãe não pode existir sem o computador e é dependente dele.
 
 			Em programação orientada a objetos, associação, agregação e composição são termos que descrevem os relacionamentos entre as classes. A associação é uma relação entre duas classes que não têm dependência entre si, mas estão relacionadas de alguma forma. Por exemplo, a relação entre um professor e seus alunos. Um aluno pode ter vários professores e um professor pode ter vários alunos. Não há propriedade ou dependência entre eles. A relação é eventual 1.
 
 			A agregação é uma relação de um para muitos, onde um objeto é proprietário de outros, mas não há dependência, então ambos podem existir mesmo que a relação não se estabeleça. Por exemplo, a relação entre os professores e os departamentos. Departamentos podem ter vários professores e um professor só pode estar vinculado a um único departamento. Mas eles são independentes. Um professor pode existir sem vínculo com um departamento e este não depende de professores para existir 1.
 
 			A composição é uma agregação que possui dependência entre os objetos, ou seja, se o objeto principal for destruído, os objetos que o compõe não podem existir mais. Há a chamada relação de morte. Por exemplo, a relação entre um carro e suas rodas. Se o carro for destruído, as rodas também serão 1
+			
+3.Objetos em Java podem conter outros objetos? Explique.
+	Não , objeto em java pode conter referências de outro(s) objeto, e não diretamente o objeto;
+	 
+	o que acontece é quando um objeto tem atributo(s) que faz referência à outro objeto .
 	
+	e este outro objeto ele esta contido como parte do objeto todo.
+	
+	Exemplo : é o exercicio da Revisao 2 
+	
+	Um objeto carro tem como um de seus atributos a referência a um objeto de outra classe
+	Logo o Objeto Carro contèm referência de outro objeto
+	O objeto carro contèm a referência do objeto Roda
+	
+	A resposta do chat BING 
+	
+			Na verdade, objetos em Java podem conter outros objetos. Isso é conhecido como composição. A composição é uma relação entre objetos em que um objeto é composto por outros objetos. Essa relação é estabelecida por meio de variáveis de instância que referenciam outros objetos.
+			
+			Por exemplo, considere a classe Carro abaixo:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			public class Carro {
+			    private Roda[] rodas;
+			    private Motor motor;
+			
+			    public Carro() {
+			        this.rodas = new Roda[4];
+			        for (int i = 0; i < 4; i++) {
+			            this.rodas[i] = new Roda();
+			        }
+			        this.motor = new Motor();
+			    }
+			}
+			Neste exemplo, a classe Carro é composta por quatro objetos do tipo Roda e um objeto do tipo Motor. A classe Roda e a classe Motor são objetos secundários que são compostos pela classe Carro. A classe Roda e a classe Motor não podem existir sem a classe Carro. Isso é um exemplo de composição.
+			
+			Outro exemplo seria a classe Pessoa que contém um objeto do tipo Endereco:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			public class Pessoa {
+			    private String nome;
+			    private Endereco endereco;
+			
+			    public Pessoa(String nome, Endereco endereco) {
+			        this.nome = nome;
+			        this.endereco = endereco;
+			    }
+			}
+			
+			public class Endereco {
+			    private String rua;
+			    private String cidade;
+			    private String estado;
+			
+			    public Endereco(String rua, String cidade, String estado) {
+			        this.rua = rua;
+			        this.cidade = cidade;
+			        this.estado = estado;
+			    }
+			}
+			
+			Neste exemplo, a classe Pessoa é composta por um objeto do tipo Endereco. A classe Endereco é um objeto secundário que é composto pela classe Pessoa. A classe Endereco não pode existir sem a classe Pessoa. Isso é outro exemplo de composição.
+			
+			Espero ter ajudado! 😊
+			
+			
+			
+		A resposta do chat GPT
+		
+			
+			Sim, em Java é possível ter um objeto que contenha referências para outros objetos. Isso é conhecido como composição de objetos. Por exemplo, você pode ter uma classe que contenha referências de outras classes como seus campos. Aqui está um exemplo simples:
+			
+			java
+			Copy code
+			public class Pessoa {
+			    private String nome;
+			    private Endereco endereco;
+			
+			    // Construtor, getters e setters
+			
+			    // Outros métodos da classe
+			}
+			
+			public class Endereco {
+			    private String rua;
+			    private String cidade;
+			    private String cep;
+			
+			    // Construtor, getters e setters
+			
+			    // Outros métodos da classe
+			}
+			No exemplo acima, a classe Pessoa contém um campo do tipo Endereco. Isso significa que um objeto Pessoa pode conter um objeto Endereco. Essa é uma forma de organizar e estruturar dados em Java, permitindo a criação de objetos compostos por outros objetos.
+			
+			-----------------
+			
+			Sim, em Java, é possível que um objeto contenha outro objeto. Essa abordagem é conhecida como composição, onde uma classe pode ter membros que são objetos de outras classes. Isso permite a criação de estruturas mais complexas e modularização do código.
+
+			Por exemplo, considere as classes `Carro` e `Motor`:
+			
+			```java
+			public class Motor {
+			    private int cilindradas;
+			
+			    public Motor(int cilindradas) {
+			        this.cilindradas = cilindradas;
+			    }
+			
+			    // Métodos e lógica relacionados ao motor
+			}
+			
+			public class Carro {
+			    private String modelo;
+			    private Motor motor;  // Objeto do tipo Motor como membro
+			
+			    public Carro(String modelo, Motor motor) {
+			        this.modelo = modelo;
+			        this.motor = motor;
+			    }
+			
+			    // Métodos e lógica relacionados ao carro
+			}
+			```
+			
+			Neste exemplo, a classe `Carro` possui um membro chamado `motor`, que é um objeto do tipo `Motor`. Isso representa uma relação de composição entre as duas classes. Ao criar uma instância de `Carro`, você também precisará fornecer uma instância de `Motor`.
+			
+			```java
+			Motor motorCarro = new Motor(2000);
+			Carro meuCarro = new Carro("Sedan", motorCarro);
+			```
+			
+			Essa abordagem permite que você organize seu código de forma mais modular e represente relações complexas entre diferentes entidades no seu sistema.
+
+
+Exercício de revisão 4 
+
+4.Arrays são dimensionáveis?
+
+	em java sim , pode escolher o tamanho na array mas é um valor fixo que não pode ser alterado.
+	o que pode ser redimensionado é quando usa Arraylist(isso é um tipo de dado dentro do java.)
+	
+	exemplo : estanciei  6 arrays e dimensionei elas
+	
+	ja que não pode mudar o tamanho definido da array , 
+	cria outra array com tamanho diferente e repasse os elementos da primeira para segunda array.
+	 
+	Redimensionar com outra array usando a classe Arrays.copyOf().
+	
+			Em programação orientada a objetos, redimensionar uma array significa alterar o tamanho da array. Em Java, por exemplo, você pode criar um array com qualquer tamanho que desejar. Para redimensionar um array em Java, você precisa criar um novo array com o tamanho desejado e copiar os elementos do array original para o novo array. Isso pode ser feito manualmente ou usando a classe Arrays.copyOf().
+			
+			Por exemplo, considere o seguinte código:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			int[] meuArray = new int[10];
+			Este código cria um array de inteiros com 10 elementos. Se você quiser redimensionar este array para 20 elementos, você pode fazer o seguinte:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			int[] novoArray = Arrays.copyOf(meuArray, 20);
+			Isso criará um novo array de inteiros com 20 elementos e copiará os primeiros 10 elementos do array original para o novo array. Os 10 elementos restantes serão preenchidos com o valor padrão para o tipo de dados do array (no caso de inteiros, o valor padrão é 0).
+			
+
+5.O que é um Conjunto?
+
+	código interface Set 
+						faz contrato com as classes
+													HashSet O(1)
+													TreeSet O(Log n)
+													LinkHashSet O(1)
+													
+	HASHSET
+		vantagem
+				 manipula os elementos do conjunto mais rápido
+		desvantagem
+				não garante a ordem dos elementos dentro da coleção
+				
+	TREESET
+		vantagem
+				garante sempre a ordem asc ou desc dos elementos dentro da coleção
+		desvantagem
+				é mais lento que o HASHSET e LINKEDHASHSET
+				
+	LINKHASHSET
+		vantagem
+				garante a ordem dos elementos na sequencia que foi criada
+				e é mais rápido que o TREESET
+		desvantagem
+				é mais lento que o HASHSET
+				
+													
+	É como se tivesse criado um novo tipo de unidade , que é um grupo com varios objetos sem repetição.
+	
+	Coleção é varios objetos agrupados em uma unidade 
+	
+	O java tem um framework collections , que ajuda 
+	manipular as coleções dentro dos 3 tipos diferentes ( Set, List, Map)
+		-adicionando elemento
+		-removendo elemento
+		-acessar elemento
+		-pesquisando elemento
+	
+	isso é diferente de composição ? 
+		se sim isso quer dizer que os elementos serão estanciados quando o conjunto for estanciado tmbm ?
+		ou senão os elementos objetos serão estanciados separadamente do conjunto ?		
+			Sim, coleção e composição são conceitos diferentes em programação orientada a objetos. Uma coleção é uma estrutura de dados que armazena um grupo de objetos sem repetição. Em outras palavras, um conjunto é uma coleção de objetos que não permite duplicatas. Em Java, por exemplo, um conjunto é criado usando a classe HashSet ou a classe TreeSet. Para adicionar elementos a um conjunto, você pode usar o método add(). Para remover elementos, você pode usar o método remove()1.					
+			Por outro lado, a composição é um tipo de associação forte entre classes em que um objeto é composto por outros objetos. Em outras palavras, um objeto é formado por outros objetos menores. Por exemplo, um objeto Carro pode ser composto por objetos menores como Motor, Rodas, Portas, etc. A composição é uma relação “todo-parte” em que a parte não pode existir sem o todo. Se o todo for destruído, todas as partes também serão destruídas 23.
+	
+		
+	Exemplo : 
+	
+	conjunto Turma 
+				é um conjunto de alunos sem repetição
+		Uma turma tem varios alunos .
+				cada turma é um objeto e ela contém  um conjunto de alunos
+				cada aluno é um objeto e ele contém varias informações 
+				-nome
+				-idade
+				-endereço
+		 		
+	Um conjunto em programação orientada a objetos é uma estrutura de dados que armazena um grupo de objetos sem repetição. 
+	
+	Claro! Aqui estão alguns exemplos de conjuntos de objetos em programação orientada a objetos:
+
+	Conjunto de alunos: um conjunto que contém todos os alunos de uma escola. Este conjunto não contém nenhum aluno repetido. Cada aluno é representado por um objeto que contém informações como nome, idade, endereço, etc1.
+	Conjunto de produtos: um conjunto que contém todos os produtos em um catálogo de compras. Este conjunto não contém nenhum produto repetido. Cada produto é representado por um objeto que contém informações como nome, preço, descrição, etc2.
+	Conjunto de animais: um conjunto que contém todos os animais em um zoológico. Este conjunto não contém nenhum animal repetido. Cada animal é representado por um objeto que contém informações como espécie, habitat, dieta, etc3.
+
+		Em programação orientada a objetos, Collections é um framework que fornece uma arquitetura unificada para manipulação de coleções de objetos em Java. Uma coleção é um objeto que agrupa múltiplos elementos (variáveis primitivas ou objetos) dentro de uma única unidade, devido a isso uma coleção também pode ser denominada como um container 1. O framework Collections é composto por um conjunto de interfaces e classes que podem ser tratados de forma única 2.
+		
+		Por exemplo, o código abaixo cria um conjunto de strings usando a classe HashSet do framework Collections:
+		
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		import java.util.HashSet;
+		import java.util.Set;
+		
+		public class ConjuntoExemplo {
+		    public static void main(String[] args) {
+		        // Criando um conjunto
+		        Set<String> conjunto = new HashSet<String>();
+		
+		        // Adicionando elementos ao conjunto
+		        conjunto.add("elemento1");
+		        conjunto.add("elemento2");
+		        conjunto.add("elemento3");
+		
+		        // Imprimindo o conjunto
+		        System.out.println("Conjunto: " + conjunto);
+		
+		        // Removendo um elemento do conjunto
+		        conjunto.remove("elemento2");
+		
+		        // Imprimindo o conjunto novamente
+		        System.out.println("Conjunto: " + conjunto);
+		    }
+		}
+		
+		
+			
+		Em Java, HashSet e TreeSet são duas classes que implementam a interface Set e são usadas para armazenar elementos exclusivos. A principal diferença entre as duas é que o HashSet não garante a ordem dos elementos, enquanto o TreeSet armazena os elementos em ordem crescente ou decrescente 12.
+		
+		O HashSet é a implementação mais rápida de Set em Java. Ele usa uma tabela hash para armazenar os elementos e tem complexidade O(1) para adicionar, remover e verificar se um elemento está presente no conjunto. No entanto, ele não garante a ordem dos elementos 1.
+		
+		O TreeSet, por outro lado, armazena os elementos em uma árvore rubro-negra e garante que os elementos estejam sempre em ordem crescente ou decrescente. Isso significa que a complexidade para adicionar, remover e verificar se um elemento está presente no conjunto é O(log n), o que é mais lento do que o HashSet. No entanto, se você precisar dos elementos em ordem, o TreeSet é a escolha certa 1.
+		
+		Aqui está um exemplo de como usar o HashSet e o TreeSet em Java:
+		
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		import java.util.HashSet;
+		import java.util.Set;
+		import java.util.TreeSet;
+		
+		public class ConjuntoExemplo {
+		    public static void main(String[] args) {
+		        // Criando um HashSet
+		        Set<String> conjunto1 = new HashSet<String>();
+		
+		        // Adicionando elementos ao HashSet
+		        conjunto1.add("elemento1");
+		        conjunto1.add("elemento2");
+		        conjunto1.add("elemento3");
+		
+		        // Imprimindo o HashSet
+		        System.out.println("HashSet: " + conjunto1);
+		
+		        // Criando um TreeSet
+		        Set<String> conjunto2 = new TreeSet<String>();
+		
+		        // Adicionando elementos ao TreeSet
+		        conjunto2.add("elemento1");
+		        conjunto2.add("elemento2");
+		        conjunto2.add("elemento3");
+		
+		        // Imprimindo o TreeSet
+		        System.out.println("TreeSet: " + conjunto2);
+		    }
+		}
+		Neste exemplo, criamos um HashSet e um TreeSet de strings. Em seguida, adicionamos alguns elementos aos conjuntos usando o método add(). Depois, imprimimos os conjuntos usando System.out.println(). Observe que o HashSet não garante a ordem dos elementos, enquanto o TreeSet os armazena em ordem crescente.
+
+------
+		Em Java, uma interface é uma coleção de métodos abstratos e constantes que podem ser implementados por uma classe. Uma interface é semelhante a uma classe abstrata, mas não pode ser instanciada. Em vez disso, as classes que implementam uma interface devem fornecer uma implementação para cada método na interface. As interfaces são usadas para definir um contrato entre duas partes, como uma classe e um cliente que usa a classe 12.
+		
+		A interface Set é uma interface em Java que estende a interface Collection. Um conjunto é uma coleção que não permite elementos duplicados. Em outras palavras, um conjunto contém apenas elementos exclusivos. A interface Set define um conjunto de métodos que podem ser usados para manipular conjuntos, como adicionar elementos, remover elementos e verificar se um elemento está presente no conjunto. Algumas classes que implementam a interface Set incluem HashSet, TreeSet e LinkedHashSet 345.
+		
+		Aqui está um exemplo de como usar a interface Set em Java:
+		
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		import java.util.HashSet;
+		import java.util.Set;
+		
+		public class ConjuntoExemplo {
+		    public static void main(String[] args) {
+		        // Criando um conjunto
+		        Set<String> conjunto = new HashSet<String>();
+		
+		        // Adicionando elementos ao conjunto
+		        conjunto.add("elemento1");
+		        conjunto.add("elemento2");
+		        conjunto.add("elemento3");
+		
+		        // Imprimindo o conjunto
+		        System.out.println("Conjunto: " + conjunto);
+		
+		        // Removendo um elemento do conjunto
+		        conjunto.remove("elemento2");
+		
+		        // Imprimindo o conjunto novamente
+		        System.out.println("Conjunto: " + conjunto);
+		    }
+		}
+		Neste exemplo, criamos um conjunto de strings usando a classe HashSet. Em seguida, adicionamos alguns elementos ao conjunto usando o método add(). Depois, imprimimos o conjunto usando System.out.println(). Em seguida, removemos um elemento do conjunto usando o método remove(). Por fim, imprimimos o conjunto novamente para verificar se o elemento foi removido com sucesso.
+------
+			
+			HashSet
+			O HashSet é uma classe em Java que implementa a interface Set. Ele armazena elementos exclusivos e não garante a ordem dos elementos. O HashSet é a implementação mais rápida de Set em Java. Ele usa uma tabela hash para armazenar os elementos e tem complexidade O(1) para adicionar, remover e verificar se um elemento está presente no conjunto. No entanto, ele não garante a ordem dos elementos.
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			import java.util.HashSet;
+			import java.util.Set;
+			
+			public class HashSetExample {
+			    public static void main(String[] args) {
+			        // Criando um HashSet
+			        Set<String> conjunto = new HashSet<String>();
+			
+			        // Adicionando elementos ao conjunto
+			        conjunto.add("elemento1");
+			        conjunto.add("elemento2");
+			        conjunto.add("elemento3");
+			
+			        // Imprimindo o conjunto
+			        System.out.println("Conjunto: " + conjunto);
+			
+			        // Removendo um elemento do conjunto
+			        conjunto.remove("elemento2");
+			
+			        // Imprimindo o conjunto novamente
+			        System.out.println("Conjunto: " + conjunto);
+			    }
+			}
+			Neste exemplo, criamos um conjunto de strings usando a classe HashSet. Em seguida, adicionamos alguns elementos ao conjunto usando o método add(). Depois, imprimimos o conjunto usando System.out.println(). Em seguida, removemos um elemento do conjunto usando o método remove(). Por fim, imprimimos o conjunto novamente para verificar se o elemento foi removido com sucesso.
+			
+			TreeSet
+			O TreeSet é uma classe em Java que implementa a interface Set. Ele armazena elementos exclusivos e garante que os elementos estejam sempre em ordem crescente ou decrescente. Isso significa que a complexidade para adicionar, remover e verificar se um elemento está presente no conjunto é O(log n), o que é mais lento do que o HashSet. No entanto, se você precisar dos elementos em ordem, o TreeSet é a escolha certa.
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			import java.util.Set;
+			import java.util.TreeSet;
+			
+			public class TreeSetExample {
+			    public static void main(String[] args) {
+			        // Criando um TreeSet
+			        Set<String> conjunto = new TreeSet<String>();
+			
+			        // Adicionando elementos ao conjunto
+			        conjunto.add("elemento1");
+			        conjunto.add("elemento2");
+			        conjunto.add("elemento3");
+			
+			        // Imprimindo o conjunto
+			        System.out.println("Conjunto: " + conjunto);
+			
+			        // Removendo um elemento do conjunto
+			        conjunto.remove("elemento2");
+			
+			        // Imprimindo o conjunto novamente
+			        System.out.println("Conjunto: " + conjunto);
+			    }
+			}
+			Neste exemplo, criamos um conjunto de strings usando a classe TreeSet. Em seguida, adicionamos alguns elementos ao conjunto usando o método add(). Depois, imprimimos o conjunto usando System.out.println(). Em seguida, removemos um elemento do conjunto usando o método remove(). Por fim, imprimimos o conjunto novamente para verificar se o elemento foi removido com sucesso.
+			
+			LinkedHashSet
+			O LinkedHashSet é uma classe em Java que implementa a interface Set. Ele armazena elementos exclusivos e garante que os elementos estejam sempre na ordem em que foram inseridos. Isso significa que a complexidade para adicionar, remover e verificar se um elemento está presente no conjunto é O(1), o que é mais rápido do que o TreeSet. No entanto, ele é mais lento do que o HashSet.
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			import java.util.LinkedHashSet;
+			import java.util.Set;
+			
+			public class LinkedHashSetExample {
+			    public static void main(String[] args) {
+			        // Criando um LinkedHashSet
+			        Set<String> conjunto = new LinkedHashSet<String>();
+			
+			        // Adicionando elementos ao conjunto
+			        conjunto.add("elemento1");
+			        conjunto.add("elemento2");
+			        conjunto.add("elemento3");
+			
+			        // Imprimindo o conjunto
+			        System.out.println("Conjunto: " + conjunto);
+			
+			        // Removendo um elemento do conjunto
+			        conjunto.remove("elemento2");
+			
+			        // Imprimindo o conjunto novamente
+			        System.out.println("Conjunto: " + conjunto);
+			    }
+			}
+			Neste exemplo, criamos um conjunto de strings usando a classe LinkedHashSet. Em seguida, adicionamos alguns elementos ao conjunto usando o método add(). Depois, imprimimos o conjunto usando System.out.println(). Em seguida, removemos um elemento do conjunto usando o método remove(). Por fim
+			
+6. O que é um mapeamento ou tabela ?
+
+	é uma coleção de objetos que é mais eficiente manipular-los
+	
+	È uma estrutura de dados em que cada elemento uma chave que mapeia um valor. E estes dois podem ser objetos
+	A chave não pode ser repetida , mas o valor pode. 
+	Cada chave so pode mapear um valor
+	
+	Serve para acessar um elemento dentro de um grupo de elementos aleatoriamente através da chave
+	
+						
+				
+	Em programação orientada a objetos, um mapeamento ou tabela é uma estrutura de dados que armazena informações sobre objetos. Em outras palavras, um mapeamento é uma coleção de objetos que permite que os objetos sejam acessados e manipulados de forma eficiente. Em Java, por exemplo, um mapeamento pode ser criado usando a classe HashMap ou a classe TreeMap. 
+	Para adicionar elementos a um mapeamento, você pode usar o método put(). Para remover elementos, você pode usar o método remove()1.
+	
+	Vantagens:
+	Os mapas permitem que você armazene pares de chave-valor, o que é útil para armazenar informações relacionadas.
+	Os mapas permitem que você acesse rapidamente os valores com base em uma chave.
+	Os mapas são úteis para contar a frequência de elementos em uma coleção.
+	Os mapas são úteis para implementar caches e memoização.
+	
+	
+	Desvantagens:
+	Os mapas podem ser mais lentos do que outras estruturas de dados, como listas e conjuntos.
+	Os mapas podem ser mais difíceis de entender e usar do que outras estruturas de dados.
+	Os mapas podem ser mais propensos a erros do que outras estruturas de dados, como listas e conjuntos.
+	Os mapas podem ser mais propensos a problemas de concorrência do que outras estruturas de dados.
+	Em geral, os mapas são uma estrutura de dados útil em programação orientada a objetos, mas é importante usá-los com cuidado e entender suas vantagens e desvantagens.
+		
+	Exemplo simples
+	
+				 Tenho uma loja e quero saber a quantas unidades eu tenho de cada produto
+				
+					Map<		key		 	,	 	value	  >
+					Map<  Nome do Produto   , Quantas unidades>
+				
+				cite o exemplo de um contexto onde vai ser usado um mapa de strings e inteiros em java , explique o contexto
+				Procurando por mapa de strings e inteiros em java
+				
+				Gerando respostas para você…
+				
+				Um exemplo de contexto em que um mapa de strings e inteiros pode ser usado em Java é em um sistema de gerenciamento de estoque. Suponha que você tenha uma loja que vende vários produtos e deseja manter um registro do número de unidades de cada produto em estoque. Você pode usar um mapa de strings e inteiros para armazenar o nome do produto e o número de unidades em estoque.
+				
+				Por exemplo, o código abaixo cria um mapa de strings e inteiros usando a classe HashMap:
+				
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				import java.util.HashMap;
+				import java.util.Map;
+				
+				public class MapExemplo {
+				    public static void main(String[] args) {
+				        // Criando um mapa
+				        Map<String, Integer> mapa = new HashMap<String, Integer>();
+				
+				        // Adicionando elementos ao mapa
+				        mapa.put("produto1", 10);
+				        mapa.put("produto2", 20);
+				        mapa.put("produto3", 30);
+				
+				        // Imprimindo o mapa
+				        System.out.println("Mapa: " + mapa);
+				
+				        // Removendo um elemento do mapa
+				        mapa.remove("produto2");
+				
+				        // Imprimindo o mapa novamente
+				        System.out.println("Mapa: " + mapa);
+				    }
+				}
+				Neste exemplo, criamos um mapa de strings e inteiros usando a classe HashMap. Em seguida, adicionamos alguns elementos ao mapa usando o método put(). Depois, imprimimos o mapa usando System.out.println(). Em seguida, removemos um elemento do mapa usando o método remove(). Por fim, imprimimos o mapa novamente para verificar se o elemento foi removido com sucesso.	
+		
+		Exemplo médio 	
+						Tenho um sistema de gerenciamento de funcionarios 
+																		e cada funcionario tem um id único
+																		e cada um tem varia informações
+																									-nome
+																									-cargo
+																									-salario
+																									-endereço
+				
+							Map<   key 	,	 	value	    >
+							Map<   id 	,OBJETO funcionario >
+							
+							
+							cite o exemplo de um outro contexto onde vai ser usado um mapa de objetos em java , explique o contexto.
+							
+							Claro! Aqui está outro exemplo de contexto em que um mapa de objetos pode ser usado em Java:
+
+							Suponha que você esteja desenvolvendo um sistema de gerenciamento de funcionários para uma empresa. Você pode usar um mapa de objetos para armazenar informações sobre cada funcionário, como nome, cargo, salário, data de contratação, etc. O mapa pode ser usado para acessar rapidamente as informações de um funcionário com base em seu nome ou ID.
+							
+							Por exemplo, o código abaixo cria um mapa de objetos usando a classe HashMap:
+							
+							Java
+							Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+							
+							import java.util.HashMap;
+							import java.util.Map;
+							
+							public class MapExemplo {
+							    public static void main(String[] args) {
+							        // Criando um mapa de objetos
+							        Map<String, Funcionario> mapa = new HashMap<String, Funcionario>();
+							
+							        // Adicionando funcionários ao mapa
+							        mapa.put("joao", new Funcionario("João", "Gerente", 5000.0));
+							        mapa.put("maria", new Funcionario("Maria", "Analista", 3000.0));
+							        mapa.put("pedro", new Funcionario("Pedro", "Desenvolvedor", 4000.0));
+							
+							        // Imprimindo o mapa
+							        System.out.println("Mapa: " + mapa);
+							
+							        // Removendo um funcionário do mapa
+							        mapa.remove("maria");
+							
+							        // Imprimindo o mapa novamente
+							        System.out.println("Mapa: " + mapa);
+							    }
+							}
+							
+							class Funcionario {
+							    private String nome;
+							    private String cargo;
+							    private double salario;
+							
+							    public Funcionario(String nome, String cargo, double salario) {
+							        this.nome = nome;
+							        this.cargo = cargo;
+							        this.salario = salario;
+							    }
+							
+							    public String getNome() {
+							        return nome;
+							    }
+							
+							    public String getCargo() {
+							        return cargo;
+							    }
+							
+							    public double getSalario() {
+							        return salario;
+							    }
+							
+							    @Override
+							    public String toString() {
+							        return "Funcionario{" +
+							                "nome='" + nome + '\'' +
+							                ", cargo='" + cargo + '\'' +
+							                ", salario=" + salario +
+							                '}';
+							    }
+							}
+							Neste exemplo, criamos um mapa de objetos usando a classe HashMap. Em seguida, adicionamos alguns funcionários ao mapa usando o método put(). Cada funcionário é representado por um objeto da classe Funcionario, que contém informações como nome, cargo e salário. Depois, imprimimos o mapa usando System.out.println(). Em seguida, removemos um funcionário do mapa usando o método remove(). Por fim, imprimimos o mapa novamente para verificar se o funcionário foi removido com sucesso.
+
+
+7. O que é uma Lista? 
+
+	é a famosa array em que cada elemento aponta para o próximo elemento com indices so que diferente da tradicional ela é dinâmica e tipo de dados não fixo 
+
+	lembre-se , cada posição desta array dinamica não tem o elemnto/objeto atribuido , tem a referência dele
+	
+	Um grupo de elementos em uma ordem linear, sequencialmente com antecessores e sucessores.
+	pode repitir elementos
+	
+	para cada elemento tem um indice , começando com 0 
+	
+	este grupo é redimensinavel e ele pode ter elementos de tipo de dados diferente.
+	
+	funções 
+				size()
+				isEmpty()
+				add()
+				get()	   indice
+				set()      indice
+				contains()
+				indexOf()
+				clear()
+				remove()   indice
+				remove()   elemento
+				
+	List é uma interface que pode implementar as classes
+														ArrayList
+														LinkedList
+														Vector
+																e Vector tem uma classe filha que é a classe STACK
+	
+	Exemplo simples : 
+		criar uma lista com elementos de tipo de dados diferente
+		criar uma lista de um tipo de dado especifico com cada elemento sendo uma palavra
+	
+			Em programação orientada a objetos, uma lista é uma estrutura de dados que armazena uma coleção de elementos em uma ordem específica. Em outras palavras, uma lista é uma sequência de elementos que podem ser acessados por um índice. Em Java, por exemplo, uma lista pode ser criada usando a interface List e suas implementações, como ArrayList e LinkedList. As listas são úteis para armazenar e manipular coleções de elementos.
+			Vantagens:
+			
+			As listas permitem que você armazene uma coleção de elementos em uma ordem específica.
+			As listas permitem que você acesse rapidamente os elementos com base em um índice.
+			As listas são úteis para armazenar e manipular coleções de elementos.
+			Desvantagens:
+			
+			As listas podem ser mais lentas do que outras estruturas de dados, como arrays.
+			As listas podem ser mais difíceis de entender e usar do que outras estruturas de dados.
+			As listas podem ser mais propensas a erros do que outras estruturas de dados, como arrays.
+			Aqui está um exemplo simples de como usar uma lista em Java:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			import java.util.ArrayList;
+			import java.util.List;
+			
+			public class ListaExemplo {
+			    public static void main(String[] args) {
+			        // Criando uma lista
+			        List<String> lista = new ArrayList<String>();
+			
+			        // Adicionando elementos à lista
+			        lista.add("elemento1");
+			        lista.add("elemento2");
+			        lista.add("elemento3");
+			
+			        // Imprimindo a lista
+			        System.out.println("Lista: " + lista);
+			
+			        // Removendo um elemento da lista
+			        lista.remove("elemento2");
+			
+			        // Imprimindo a lista novamente
+			        System.out.println("Lista: " + lista);
+			    }
+			}
+			Neste exemplo, criamos uma lista de strings usando a classe ArrayList. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, imprimimos a lista usando System.out.println(). Em seguida, removemos um elemento da lista usando o método remove(). Por fim, imprimimos a lista novamente para verificar se o elemento foi removido com sucesso.
+	
+	ExemploMedio 
+		criar uma lista de objetos do tipo abstrato
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				import java.util.ArrayList;
+				import java.util.List;
+				
+				public class ListaExemplo {
+				    public static void main(String[] args) {
+				        // Criando uma lista de objetos
+				        List<Produto> lista = new ArrayList<Produto>();
+				
+				        // Adicionando produtos à lista
+				        lista.add(new Produto("Produto 1", 10, 5.0));
+				        lista.add(new Produto("Produto 2", 20, 10.0));
+				        lista.add(new Produto("Produto 3", 30, 15.0));
+				
+				        // Imprimindo a lista
+				        System.out.println("Lista: " + lista);
+				
+				        // Removendo um produto da lista
+				        lista.remove(new Produto("Produto 2", 20, 10.0));
+				
+				        // Imprimindo a lista novamente
+				        System.out.println("Lista: " + lista);
+				    }
+				}
+				
+				class Produto {
+				    private String nome;
+				    private int quantidade;
+				    private double preco;
+				
+				    public Produto(String nome, int quantidade, double preco) {
+				        this.nome = nome;
+				        this.quantidade = quantidade;
+				        this.preco = preco;
+				    }
+				
+				    public String getNome() {
+				        return nome;
+				    }
+				
+				    public int getQuantidade() {
+				        return quantidade;
+				    }
+				
+				    public double getPreco() {
+				        return preco;
+				    }
+				
+				    @Override
+				    public String toString() {
+				        return "Produto{" +
+				                "nome='" + nome + '\'' +
+				                ", quantidade=" + quantidade +
+				                ", preco=" + preco +
+				                '}';
+				    }
+				
+				}
+				Neste exemplo, criamos uma lista de objetos usando a classe ArrayList. Em seguida, adicionamos alguns produtos à lista usando o método add(). Cada produto é representado por um
+
+				------
+				A interface List é uma das interfaces mais importantes do framework de coleções do Java. Ela define um contrato para uma lista ordenada de elementos, onde cada elemento pode ser acessado por um índice. Existem várias implementações da interface List, incluindo ArrayList, LinkedList e Vector. Cada uma dessas implementações tem suas próprias vantagens e desvantagens.
+				
+					Aqui está um exemplo de como usar a classe ArrayList em Java:
+					
+					ArrayList
+					
+					O ArrayList é uma implementação da interface List que armazena os elementos em um array interno.
+					Vantagens:
+						O acesso aos elementos é rápido quando se conhece o índice.
+						É mais rápido do que o LinkedList para acessar elementos em uma posição específica.
+						É mais fácil de usar do que o Vector.
+					Desvantagens:
+						É mais lento do que o LinkedList para inserir ou remover elementos no meio da lista.
+						O redimensionamento do array interno pode ser custoso em termos de desempenho.
+
+					Java
+					Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+					
+					import java.util.ArrayList;
+					import java.util.List;
+					
+					public class ArrayListExemplo {
+					    public static void main(String[] args) {
+					        // Criando uma lista de strings usando ArrayList
+					        List<String> lista = new ArrayList<String>();
+					
+					        // Adicionando elementos à lista
+					        lista.add("elemento1");
+					        lista.add("elemento2");
+					        lista.add("elemento3");
+					
+					        // Imprimindo a lista
+					        System.out.println("Lista: " + lista);
+					
+					        // Removendo um elemento da lista
+					        lista.remove("elemento2");
+					
+					        // Imprimindo a lista novamente
+					        System.out.println("Lista: " + lista);
+					    }
+					}
+					Neste exemplo, criamos uma lista de strings usando a classe ArrayList. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, imprimimos a lista usando System.out.println(). Em seguida, removemos um elemento da lista usando o método remove(). Por fim, imprimimos a lista novamente para verificar se o elemento foi removido com sucesso.
+					
+					_
+					Aqui está um exemplo de como usar a classe LinkedList em Java:
+					
+					LinkedList
+
+					O LinkedList é uma implementação da interface List que armazena os elementos em uma lista duplamente encadeada.
+					Vantagens:
+						É mais rápido do que o ArrayList para inserir ou remover elementos no meio da lista.
+						Não precisa realocar memória para crescer ou diminuir a lista.
+					Desvantagens:
+						O acesso aos elementos é mais lento do que o ArrayList quando se conhece o índice.
+						Usa mais memória do que o ArrayList.
+
+					Java
+					Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+					
+					import java.util.LinkedList;
+					import java.util.List;
+					
+					public class LinkedListExemplo {
+					    public static void main(String[] args) {
+					        // Criando uma lista de strings usando LinkedList
+					        List<String> lista = new LinkedList<String>();
+					
+					        // Adicionando elementos à lista
+					        lista.add("elemento1");
+					        lista.add("elemento2");
+					        lista.add("elemento3");
+					
+					        // Imprimindo a lista
+					        System.out.println("Lista: " + lista);
+					
+					        // Removendo um elemento da lista
+					        lista.remove("elemento2");
+					
+					        // Imprimindo a lista novamente
+					        System.out.println("Lista: " + lista);
+					    }
+					}
+					Neste exemplo, criamos uma lista de strings usando a classe LinkedList. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, imprimimos a lista usando System.out.println(). Em seguida, removemos um elemento da lista usando o método remove(). Por fim, imprimimos a lista novamente para verificar se o elemento foi removido com sucesso.
+					_
+					Aqui está um exemplo de como usar a classe Vector em Java:
+					
+					Vector
+
+					O Vector é uma implementação da interface List que armazena os elementos em um array interno.
+					Vantagens:
+						É sincronizado, o que significa que é seguro para uso em ambientes multithread.
+						É mais fácil de usar do que o ArrayList.
+					Desvantagens:
+						É mais lento do que o ArrayList para acessar elementos em uma posição específica.
+						O redimensionamento do array interno pode ser custoso em termos de desempenho.
+
+					Java
+					Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+					
+					import java.util.Vector;
+					import java.util.List;
+					
+					public class VectorExemplo {
+					    public static void main(String[] args) {
+					        // Criando uma lista de strings usando Vector
+					        List<String> lista = new Vector<String>();
+					
+					        // Adicionando elementos à lista
+					        lista.add("elemento1");
+					        lista.add("elemento2");
+					        lista.add("elemento3");
+					
+					        // Imprimindo a lista
+					        System.out.println("Lista: " + lista);
+					
+					        // Removendo um elemento da lista
+					        lista.remove("elemento2");
+					
+					        // Imprimindo a lista novamente
+					        System.out.println("Lista: " + lista);
+					    }
+					}
+					Neste exemplo, criamos uma lista de strings usando a classe Vector. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, imprimimos a lista usando System.out.println(). Em seguida, removemos um elemento da lista usando o método remove(). Por fim, imprimimos a lista novamente para verificar se o elemento foi removido com sucesso.
+					
+					A principal diferença entre essas três implementações é a maneira como elas armazenam os elementos na memória. O ArrayList armazena os elementos em um array interno, enquanto o LinkedList armazena os elementos em uma lista duplamente encadeada. O Vector é semelhante ao ArrayList, mas é sincronizado e, portanto, é mais lento.
+					_
+					
+						o vector é sincronizado e por isso é mais lento , porfavor explique isso com mais detalhes sobre a implementação do list com o vector
+						
+						Claro! A classe Vector é uma implementação sincronizada da interface List em Java, o que significa que é thread-safe. Isso significa que várias threads podem acessar um objeto Vector ao mesmo tempo sem causar problemas de concorrência. No entanto, essa sincronização pode resultar em um desempenho mais baixo em comparação com outras implementações da interface List, como ArrayList e LinkedList.
+
+						A sincronização em Vector é alcançada usando o modificador synchronized em cada método público da classe. Isso garante que apenas uma thread possa acessar o objeto Vector de cada vez. No entanto, esse bloqueio e desbloqueio de threads pode ser custoso em termos de desempenho, especialmente em ambientes não concorrentes.
+						
+						Por outro lado, as implementações ArrayList e LinkedList não são sincronizadas por padrão, o que significa que elas são mais rápidas do que o Vector em ambientes não concorrentes. No entanto, se você precisar de uma implementação thread-safe da interface List, o Vector pode ser a escolha certa.
+						
+						        _
+						
+								quero que cite um exemplo de codigo java em um ambiente multithread onde tem várias threads  acessando a lista ao mesmo tempo  com a interface list implementando na classe vector . Explique o contexto de o porque do thread esta usando a lista neste contexto.
+								
+								Claro! Aqui está um exemplo de como usar a classe Vector em Java para garantir thread-safety:
+
+								Java
+								Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+								
+								import java.util.Vector;
+								import java.util.List;
+								
+								public class VectorExemplo {
+								    public static void main(String [] args) {
+								        // Criando uma lista de strings usando Vector
+								        List<String> frutas = new Vector <> ();
+								
+								        // Adicionando elementos à lista
+								        frutas.add("Maçã");
+								        frutas.add("Banana");
+								        frutas.add("Laranja");
+								
+								        // Criando duas threads que acessam a lista ao mesmo tempo
+								        Thread thread1 = new Thread(new Runnable() {
+								            @Override
+								            public void run() {
+								                for (int i = 0; i < 100; i++) {
+								                    frutas.add("Maçã");
+								                }
+								            }
+								        });
+								
+								        Thread thread2 = new Thread(new Runnable() {
+								            @Override
+								            public void run() {
+								                for (int i = 0; i < 100; i++) {
+								                    frutas.add("Banana");
+								                }
+								            }
+								        });
+								
+								        // Iniciando as threads
+								        thread1.start();
+								        thread2.start();
+								
+								        // Esperando as threads terminarem
+								        try {
+								            thread1.join();
+								            thread2.join();
+								        } catch (InterruptedException e) {
+								            e.printStackTrace();
+								        }
+								
+								        // Imprimindo a lista
+								        System.out.println("Lista: " + frutas);
+								    }
+								}
+								Neste exemplo, criamos uma lista de strings usando a classe Vector. A classe Vector é sincronizada, o que significa que é thread-safe. Isso significa que várias threads podem acessar um objeto Vector ao mesmo tempo sem causar problemas de concorrência. Em seguida, adicionamos alguns elementos à lista usando o método add(). Depois, criamos duas threads que acessam a lista ao mesmo tempo. A primeira thread adiciona 100 maçãs à lista, enquanto a segunda thread adiciona 100 bananas à lista. Por fim, imprimimos a lista para verificar se os elementos foram adicionados corretamente.
+								
+								O contexto em que as threads estão usando a lista é um ambiente multithread. Nesse ambiente, várias threads podem acessar a lista ao mesmo tempo. Se a lista não for thread-safe, isso pode levar a problemas de concorrência, como condições de corrida e deadlocks. Para evitar esses problemas, é importante usar uma implementação thread-safe da interface List, como o Vector.

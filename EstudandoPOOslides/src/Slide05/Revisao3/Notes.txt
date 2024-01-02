@@ -1,0 +1,17 @@
+Exercicio de revisao 3 
+
+3.Objetos em Java podem conter outros objetos? Explique.
+	Não , objeto em java pode conter referências de outro(s) objeto, e não diretamente o objeto;
+	 
+	o que acontece é quando um objeto tem atributo(s) que faz referência à outro objeto .
+	
+	e este outro objeto ele esta contido como parte do objeto todo.
+	
+	Exemplo : é o exercicio da Revisao 2 
+	
+	Um objeto carro tem como um de seus atributos a referência a um objeto de outra classe
+	Logo o Objeto Carro contèm referência de outro objeto
+	O objeto carro contèm a referência do objeto Roda
+	
+	
+	demorei 37'

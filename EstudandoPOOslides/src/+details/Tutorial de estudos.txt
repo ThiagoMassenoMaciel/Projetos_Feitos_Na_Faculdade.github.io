@@ -1,0 +1,10 @@
+conceito + prática
+
+Antes de ler o conteúdo olho as perguntas 
+
+Ler a pergunta 
+Ler o conteúdo
+Tenta responder com as próprias palavras 
+Copia e cola explicação + detalhes sobre o conceito - desvantagens vantages mais exemplos teóricos e abstratos 
+Peça um exemplo simples ao chat BING  e faça       elementos tipo de dado primitivo
+Peça um exemplo médio ao chat BING  e faça         elementos tipo de dado abstrato (criado objeto)
