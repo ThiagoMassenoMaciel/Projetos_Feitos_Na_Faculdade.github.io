@@ -1,0 +1,4 @@
+Atividade fiz com array tradicional
+	problema quando for percorrer array que n é redimensionada vai dar bugs quando for adicionar alunos
+	refazer do jeito do professor , pois é mais fácil e fazer também usando arraylist 
+demorei 55'
