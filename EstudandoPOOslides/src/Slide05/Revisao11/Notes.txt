@@ -1,0 +1,4 @@
+11. Para que serve um iterator? Apresente um exemplo de uso.
+	Serve para percorrer a lista de elementos em todas as direções , eu ja fiz um exemplo e esta na Revisao 7
+
+	fiz em 3 minutos

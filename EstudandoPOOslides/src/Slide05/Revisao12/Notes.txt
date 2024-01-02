@@ -1,0 +1,8 @@
+
+12.Uma chave pode mapear mais do que um valor em uma HashMap?
+
+	Não pode.
+
+	EXEMPLO :  mesma chave colocar dois valores	
+	
+demorei 13 minutos 

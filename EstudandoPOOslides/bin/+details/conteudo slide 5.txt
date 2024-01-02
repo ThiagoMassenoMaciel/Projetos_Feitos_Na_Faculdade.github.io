@@ -876,6 +876,7 @@ Exercício de revisão 4
 						O acesso aos elementos é rápido quando se conhece o índice.
 						É mais rápido do que o LinkedList para acessar elementos em uma posição específica.
 						É mais fácil de usar do que o Vector.
+						Ela é redimensionável e permite que você adicione, remova e acesse elementos em qualquer posição da lista.
 					Desvantagens:
 						É mais lento do que o LinkedList para inserir ou remover elementos no meio da lista.
 						O redimensionamento do array interno pode ser custoso em termos de desempenho.
@@ -1173,3 +1174,105 @@ minhaLista.add("elemento3");
 
 
 ======================================================================================================================================
+
+
+
+
+
+
+8.Que estruturas em Java implementam arrays redimensionáveis?
+	listas implementadas com as classes ArrayList, Vector, LinkedList 
+	
+		Em Java, as estruturas de dados que implementam arrays redimensionáveis são as seguintes:
+		
+		ArrayList: É uma classe que implementa a interface List e é uma das estruturas de dados mais usadas em Java. Ela é redimensionável e permite que você adicione, remova e acesse elementos em qualquer posição da lista. Aqui está um exemplo de código:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+			ArrayList<String> minhaLista = new ArrayList<String>();
+			minhaLista.add("elemento1");
+			minhaLista.add("elemento2");
+			minhaLista.add("elemento3");
+		
+		Vector: É uma classe que implementa a interface List e é semelhante ao ArrayList. No entanto, ele é sincronizado, o que significa que é seguro para uso em ambientes multithread. Aqui está um exemplo de código:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+			Vector<String> meuVetor = new Vector<String>();
+			meuVetor.add("elemento1");
+			meuVetor.add("elemento2");
+			meuVetor.add("elemento3");
+			
+		LinkedList: É uma classe que implementa a interface List e é uma lista duplamente encadeada. Ela é redimensionável e permite que você adicione, remova e acesse elementos em qualquer posição da lista. No entanto, ela é menos eficiente do que o ArrayList para acessar elementos em posições intermediárias. Aqui está um exemplo de código:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		LinkedList<String> minhaLista = new LinkedList<String>();
+		minhaLista.add("elemento1");
+		minhaLista.add("elemento2");
+		minhaLista.add("elemento3");
+		
+		
+	Todos os metodos que cada uma destas listas podem usar
+	 
+		add(E elemento): 				adiciona um elemento ao final da lista.
+		add(int índice, E elemento):    adiciona um elemento em um índice específico na lista.
+		clear(): 						remove todos os elementos da lista.
+		contains(Object objeto): 		retorna true se a lista contém o objeto especificado.
+		get(int índice): 				retorna o elemento no índice especificado.
+		indexOf(Object objeto): 		retorna o índice da primeira ocorrência do objeto especificado na lista.
+		isEmpty(): 						retorna true se a lista estiver vazia.
+		remove(int índice): 			remove o elemento no índice especificado.
+		set(int índice, E elemento): 	substitui o elemento no índice especificado com o elemento especificado.
+		size(): 						retorna o número de elementos na lista.
+		
+		
+		
+		
+		
+		
+		
+9.Uma operação que tenta acessar um índice que não existe gera que tipo de exceção?
+	IndexOutOfBound
+	
+	exemplo uma array com dois elementos é tentado acessar  o elemento do indice 2
+	
+
+10.O que faz o método set de uma lista?
+	o metodo set substitui o elemento da lista com o indice passado por parametro, e o novo elemento tmbm 
+	
+	Exemplo adicionando um valor inteiro para o elemento da lista que era nulo
+
+	
+11. Para que serve um iterator? Apresente um exemplo de uso.
+	Serve para percorrer a lista de elementos em todas as direções , eu ja fiz um exemplo e esta na Revisao 7
+
+
+12.Uma chave pode mapear mais do que um valor em uma HashMap?
+
+	Não pode.
+
+	EXEMPLO :  mesma chave colocar dois valores	
+	
+
+
+13.Uma HashMap pode ter duas chaves com o mesmo valor?
+
+	Pode sim
+	
+	Exemplo , coloquei duas chave diferente com o mesmo valor repetido;
+	
+	
+	Um exemplo pratico de treinar com esta estrutura de dados que tem duas quantidades de produto para o mesmo produto
+	
+	Eu faria um algoritmo que vai juntar todas as quantidades do produto 
+	
+	O(n²)
+	Um for para cada elemento
+		Outro for para cada elemento denovo pois vou procurar aonde tem elemento com o valor repetido
+		ir de um por um e perguntar se tem o mesmo valor 
+			se caso tiver soma as quantidades e apaga aquele elemento repetido
+			
+			
+	
+	

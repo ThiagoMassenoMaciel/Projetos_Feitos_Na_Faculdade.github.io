@@ -1,0 +1,8 @@
+
+14.O que faz o método containsKey de um mapeamento?
+	Vai testar se existe a chave (valor passado por parametro) dentro do map
+	
+	Exemplo chave é a quantidade , e valor é o tipo de peça de roupa 
+	  no meu guarda roupa eu quero saber se tenho alguma peça de roupa com 10 unidades
+	  
+demorei 16 minutos

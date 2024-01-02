@@ -1,0 +1,7 @@
+
+10.O que faz o método set de uma lista?
+	o metodo set substitui o elemento da lista com o indice passado por parametro, e o novo elemento tmbm 
+	
+	Exemplo adicionando um valor inteiro para o elemento da lista que era nulo
+
+	demorei 7 minutos
