@@ -1,3 +1,16 @@
+Atividade 1 
+Implementar uma classe Turma com as seguintes características:
+	Nome da turma;
+	Um array de estudantes de tamanho 10;
+	Um inteiro numEstundates para contar os estudantes matriculados na turma;
+Inclua os seguintes métodos:
+	void matricular (Estudante e) – inclui estudante na turma;
+	void listar – mostra os dados de todos os estudantes da turma;
+	Estudante pesquisar (int matricula) – procura no array o estudante cuja matrícula é igual ao parâmetro passado e o retorna;
+	void trancar (int matricula) – exclui estudante da turma;
+	void trancar (Estudante e) – exclui estudante da turma.
+
+
 Atividade fiz com array tradicional
 	problema quando for percorrer array que n é redimensionada vai dar bugs quando for adicionar alunos
 	refazer do jeito do professor , pois é mais fácil e fazer também usando arraylist 
