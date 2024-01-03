@@ -11,9 +11,9 @@ Atividade 2
 	
 	
 	
-demorei 1h 3' , 
+demorei 1h 58' , 
 
-deu um bug , quando vou excluir um objeto passando a matricula por parâmetro aparece este erro 
+deu um bug , quando vou excluir um objeto passando a matricula por parâmetro aparece este erro , corrigi o bug em 55 minutos
 
 
 Um aluno da matricula 2 trancou o curso [obj]
@@ -23,3 +23,72 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Slide0
 	at Slide05.Atividade1.Turma.trancar(Turma.java:129)
 	at Slide05.Atividade2.TesteTurma.main(TesteTurma.java:38)
  
+ 
+Ajeitei o bug , dentro do metodo pesquisar ele estava tambem fazendo teste de elementos dentro da array que estavam null , por isso tenho que fazer o teste so com as posições que não estão apontando para null
+para cada elemento dentro da array vou fazer dois teste 
+	um teste para identificar que o elemento da array na posicao atual e nulo 
+	um teste para achar o objeto aluno com a matricula igual a que eu quero trancar 
+
+		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
+				if( this.estudantes[indice] == null) {
+					break;
+				}
+			
+				if( this.estudantes[indice] == pesquisar(matricula) {
+					this.estudantes[indice] = null;
+				// antes de redimensionar array deve reordenar os objetos para as posições da array
+					this.numEstudantes += -1;
+				}
+			}
+		}
+
+	Achei outro bug 
+	
+		Depois de trancar o curso de um estudante passando por parametro o proprio objeto do estudante 
+		Executava o metodo listar() e aparecia um elemento nulo
+		
+	Achei outro bug ( este codigo dentro do main n esta funcionando :       turmaUm.trancar(2);    )
+	
+		Depois de tracar o segundo aluno , após exibir a lista continua aparecendo auqele objeto que deveria ser null
+		
+==========
+Otimizei o codigo
+==========
+antes
+
+nesta versão tem um problema pois eu tinha feito o teste na situação onde eu teria um elemento dentro da array null , que ja foi apagado antes , com
+ o objetivo de não realizar o teste com a matricula - ja que era nulo , so que isso é um problema quando o elemento que eu preciso percorrer esta 
+ na ultima posição do array , e como quando for achado aquela  posiçaõ que ja foi um elemento excluido isso impede de o for itere os próximos 
+ elementos que estão posicionados depois daquela posição que é nula
+						
+		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
+				if( this.estudantes[indice] == null) {
+					break;
+				}
+			
+				if( this.estudantes[indice] == pesquisar(matricula) {
+					this.estudantes[indice] = null;
+				// antes de redimensionar array deve reordenar os objetos para as posições da array
+					this.numEstudantes += -1;
+				}
+			}
+		}
+
+depois
+						
+		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
+
+			
+				if( this.estudante[indice] != null && this.estudantes[indice].getMatricula() == matricula) {
+					this.estudantes[indice] = null;
+				// antes de redimensionar array deve reordenar os objetos para as posições da array
+					//this.numEstudantes += -1;
+				}
+			}
+		}
+
+outro bug - começou a aparecer o erro de novo do 
+Cannot invoke "Slide05.Atividade1.Estudante.getMatricula()" because "this.estudantes[indice]" is null
+Isso quer dizer que o programa esta fazendo teste se o objeto tem a matricula igual do aluno que quero trancar tambem nas posições da array onde tem valor null
+
+	Para evitar isto eu coloco um filtro dentro do mesmo teste  para so entrar dentro do if de for um elemento que não é nulo e que tenha uma 

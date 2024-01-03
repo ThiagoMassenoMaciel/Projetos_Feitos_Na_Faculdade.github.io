@@ -16,7 +16,9 @@ public class Turma {
 	public void matricular(Estudante objeto) {
 		for(int indice = 0; indice < this.estudantes.length; indice++) {
 			if( this.estudantes[indice] == null) {
+				System.out.println(this.estudantes[indice]);
 				this.estudantes[indice] = objeto;
+				
 				this.estudantes[indice].setMatricula(indice);
 				this.numEstudantes += 1;
 				break;
@@ -45,7 +47,7 @@ public class Turma {
 
 	public Estudante pesquisar( int matricula) {
 		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
-			if( this.estudantes[indice].getMatricula() == matricula) {
+			if( this.estudantes[indice]!= null && this.estudantes[indice].getMatricula() == matricula) {
 				return estudantes[indice];
 			}
 		}
@@ -122,14 +124,11 @@ public class Turma {
 		
 				
 		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
-			if( this.estudantes[indice] == null) {
-				break;
-			}
 			
-			if( this.estudantes[indice] == pesquisar(matricula)) {
+			if( this.estudantes[indice] != null && this.estudantes[indice].getMatricula() == matricula) {
 				this.estudantes[indice] = null;
 			// antes de redimensionar array deve reordenar os objetos para as posições da array
-				this.numEstudantes += -1;
+				//this.numEstudantes += -1;
 			}
 		}
 	}
@@ -141,7 +140,7 @@ public class Turma {
 				this.estudantes[indice] = null;
 				// antes de redimensionar array deve reordenar os objetos para as posições da array
 				
-				this.numEstudantes += -1;
+				//this.numEstudantes += -1;
 			}
 		}
 	}

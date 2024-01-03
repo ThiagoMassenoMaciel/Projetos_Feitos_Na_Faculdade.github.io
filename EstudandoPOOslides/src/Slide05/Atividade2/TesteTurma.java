@@ -10,7 +10,10 @@ public class TesteTurma {
 		Estudante objeto2 = new Estudante("Jose Erasmo Castro");
 		Estudante objeto3 = new Estudante("Felipe Gonsalez Maciel");
 		
-		System.out.println("Os Alunos ainda nao matriculados" +  objeto1 + objeto2 + objeto3);
+		System.out.println("Os Alunos ainda nao matriculados");
+		System.out.println(objeto1);
+		System.out.println(objeto2);
+		System.out.println(objeto3);
 		
 		Turma turmaUm = new Turma("Nono Ano C");
 		
