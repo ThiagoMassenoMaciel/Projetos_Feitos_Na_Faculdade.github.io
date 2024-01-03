@@ -11,4 +11,5 @@ mudar as chamadas da classe Turma para TurmaArrayList.
 	tem um bug na lógica , o metodo trancar ele esta exibindo a mensagem da matricula que não foi encontrada mesmo quando foi encontrada
 		solução uso uma flag  demorei ums 6 minutos para rsolver este problema
 
+
 demorei para fazer 1h 15 minutos
