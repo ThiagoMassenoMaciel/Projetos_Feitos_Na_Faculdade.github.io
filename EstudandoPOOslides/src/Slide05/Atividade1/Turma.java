@@ -1,5 +1,7 @@
 package Slide05.Atividade1;
 
+import java.util.Arrays;
+
 import Slide05.Atividade1.Estudante;
 
 public class Turma {
@@ -15,16 +17,32 @@ public class Turma {
 		for(int indice = 0; indice < this.estudantes.length; indice++) {
 			if( this.estudantes[indice] == null) {
 				this.estudantes[indice] = objeto;
+				this.estudantes[indice].setMatricula(indice);
 				this.numEstudantes += 1;
 				break;
 			}
 		}
 	}
-	
+
 	public void listar() {
-		System.out.println(this.estudantes);
+		System.out.print("Turma "+ this.nome +"\n[");
+		
+/*		for( Estudante e : this.estudantes) {
+			System.out.print("\t"+e);
+		} // n uso este for each pois quero exibir apena as posições da array diferente de nulo
+*/
+		for( int indice = 0 ; indice < this.numEstudantes; indice++){
+			System.out.print("\t"+ this.estudantes[indice]);
+		}
+		
+		System.out.println("\n]");
 	}
-	
+	@Override
+	public String toString() {
+		return "Turma [nome=" + nome + ", estudantes=" + Arrays.toString(estudantes) + ", numEstudantes="
+				+ numEstudantes + "]";
+	}
+
 	public Estudante pesquisar( int matricula) {
 		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
 			if( this.estudantes[indice].getMatricula() == matricula) {
@@ -104,9 +122,14 @@ public class Turma {
 		
 				
 		for( int indice = 0 ; indice < this.numEstudantes; indice++) {
+			if( this.estudantes[indice] == null) {
+				break;
+			}
+			
 			if( this.estudantes[indice] == pesquisar(matricula)) {
 				this.estudantes[indice] = null;
 			// antes de redimensionar array deve reordenar os objetos para as posições da array
+				this.numEstudantes += -1;
 			}
 		}
 	}
@@ -117,6 +140,8 @@ public class Turma {
 			if( this.estudantes[indice] == e ) {
 				this.estudantes[indice] = null;
 				// antes de redimensionar array deve reordenar os objetos para as posições da array
+				
+				this.numEstudantes += -1;
 			}
 		}
 	}

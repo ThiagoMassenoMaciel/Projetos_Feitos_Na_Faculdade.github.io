@@ -1,0 +1,25 @@
+Atividade 2 
+
+2.Implementar um programa TesteTurma com as seguintes funcionalidades:
+	cria três estudantes;
+	cria uma turma;
+	matricula os três estudantes na turma;
+	lista todos os estudantes;
+	pesquisar um dos estudantes e exibir seus dados;
+	excluir estudantes usando as duas maneiras diferentes.
+
+	
+	
+	
+demorei 1h 3' , 
+
+deu um bug , quando vou excluir um objeto passando a matricula por parâmetro aparece este erro 
+
+
+Um aluno da matricula 2 trancou o curso [obj]
+
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Slide05.Atividade1.Estudante.getMatricula()" because "this.estudantes[indice]" is null
+	at Slide05.Atividade1.Turma.pesquisar(Turma.java:48)
+	at Slide05.Atividade1.Turma.trancar(Turma.java:129)
+	at Slide05.Atividade2.TesteTurma.main(TesteTurma.java:38)
+ 
