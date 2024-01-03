@@ -2,3 +2,7 @@ Atividade fiz com array tradicional
 	problema quando for percorrer array que n é redimensionada vai dar bugs quando for adicionar alunos
 	refazer do jeito do professor , pois é mais fácil e fazer também usando arraylist 
 demorei 55'
+
+Ajeitando 30' feito dia 02-01-24
+	a questão não pede para redimensionar , e eu estou redimensionando para o código funcionar futuramente para não dar conflito quanto for adiionar denovo depois de ter excluido algum elemento 
+	
