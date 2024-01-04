@@ -1,0 +1,22 @@
+
+Agenda do conteúdo do slide 06
+	Motivação
+	
+	Generalização x Especialização
+	
+	Representação Diagramática
+	
+	Código
+	
+	Herança Simples X Herança Múltipla
+	
+	Acessibilidade Protegida
+	
+	Redefinição de Métodos
+	
+	Polimorfismo
+	
+	Ligação Dinâmica
+
+
+
