@@ -10,11 +10,12 @@ Inclua os seguintes métodos:
 	void trancar (int matricula) – exclui estudante da turma;
 	void trancar (Estudante e) – exclui estudante da turma.
 
-
 Atividade fiz com array tradicional
 	problema quando for percorrer array que n é redimensionada vai dar bugs quando for adicionar alunos
 	refazer do jeito do professor , pois é mais fácil e fazer também usando arraylist 
 demorei 55'
+
+fazer uma classe exemplo utilizando o algoritmo do professor ( é aquele que tem no slide05 pagina 57 )
 
 Ajeitando 30' feito dia 02-01-24
 	a questão não pede para redimensionar , e eu estou redimensionando para o código funcionar futuramente para não dar conflito quanto for adiionar denovo depois de ter excluido algum elemento 
