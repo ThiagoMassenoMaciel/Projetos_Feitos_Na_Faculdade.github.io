@@ -52,9 +52,9 @@ public class TurmaArrayList {
 			Boolean flag = false;
 			Estudante apagar = this.pesquisar(matricula);
 			
-			for( Estudante e : this.estudantes) {
-				if(e == apagar) {
-					this.estudantes.remove(e);
+			for( Estudante a : this.estudantes) {
+				if(a == apagar) {
+					this.estudantes.remove(a);
 					this.numEstudantes += -1;
 					flag = true;
 				}
