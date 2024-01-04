@@ -19,9 +19,10 @@ Um jeito importante de fazer mais escrevendo menos ( mecanismos de reuso do cód
 	
 	Tipos de relacionamento 
 		Associação um objeto dentro de outro
-		Agregação  um objeto independente esta relacionado com outo pois ambos fazem parte do todo elemento principal
+		Agregação  um objeto independente esta relacionado com outo pois ambos fazem parte do todo elemento principal        "tem um"
 		Composicão um objeto dependente esta relacionado com outro pois ambos fazem parte  do todo elemento principal
-		
+		Herança    um objeto dependente que esta relacionado a outro objeto pai            superclasse-subclasse             " é um"
+		 
 	Coleção    varios objetos ou elementos fazem parte do mesmo grupo ou conjunto ( é uma estrutura de dados)
 		
 			   Tipos de coleção
@@ -31,4 +32,8 @@ Um jeito importante de fazer mais escrevendo menos ( mecanismos de reuso do cód
 			   			quando tem elementos organizados linearmente em uma seuqência
 			   		Map
 			   			quando tem chave mapeado para valores
+			   			
+	Herança 
+		generalização
+		especialização
 		 

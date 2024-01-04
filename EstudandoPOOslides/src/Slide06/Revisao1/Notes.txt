@@ -1,0 +1,182 @@
+1.Qual a motivação para usar herança de classes?
+
+	motivação
+	quando eu precisar criar novos objetos que reutilizam pedaços de outro ja criado
+	quando eu precisar criar novas classes que reutilizam pedaços de outra ja criada
+	
+		a nova classe herda tudo daquela já criada sem precisar escrever denovo 
+			ela é chamada de 
+				-Subclasse
+					
+	deixar a manutenção do código mais fácil , pois quanto atualiza uma vez a classe mãe automaticamente já é atualizado as classes(extends) filhas, 
+
+	em vez de repetir os mesmos atributos no novo objeto, o que ja tem nos objetos ja criados , 
+	eu so preciso herdar do criado o que é igual e adicionar no objeto novo o que vem de novo
+	
+	Herança não usa o processo de generalização( especifico -> geral)
+	
+	Exemplo :  Herança usa o processo de especialização ( geral -> especifico)  
+	
+	tenho três tipos de estudantes
+	
+		o estudante que não trabalha na faculdade					comum
+		
+		o estudante que trabalha na faculdade fazendo estagio		novo
+		
+		o estudante que trabalha da faculdade fazendo monitoria		novo
+		
+	todos os três tem algums atibutos e metodos em comum , e apenas nos novos estudantes, tem a mais
+	
+	
+		 
+	
+	
+	
+2.O que é herança de classes?
+			Herança é o compartilhamento de atributos e metodos entre classes que estão relacionadas de um jeito hierarquizado
+
+3.Quais as vantagens do uso de herança?
+
+		O processo de desenvolvimento vai ser mais eficiente pela organização hierarquica das classes
+
+		Reutiliza trechos de código através do relacionamento que uma classe filha herda atributos e metodos do pai.
+
+		mais fácil de fazer manutenção nos códigos já que quando for atualizar um código (classe pai) os outros ja vão atualizar automaticamente(classes filhas)
+
+		Permite que o código cresca linnearmente a sua complexidade
+
+		Cada nova classe que for criada , nesta lógica com a herança torna o projeto mais seguro pois a nova interação é previsível
+		
+		Um bom projeto acaba com o “reaproveitamento” do tipo Copy & Paste.
+		
+		A herança é um dos conceitos fundamentais da programação orientada a objetos. Ela permite que uma classe herde atributos e métodos de outra classe, chamada de classe base ou superclasse. A principal vantagem da herança é a capacidade de reutilizar código e organizar hierarquicamente as classes, tornando o desenvolvimento mais eficiente 123.
+		
+		Além disso, a herança possibilita que as classes compartilhem seus atributos, métodos e outros membros da classe entre si. Para a ligação entre as classes, a herança adota um relacionamento esquematizado hierarquicamente. Na Herança temos dois tipos principais de classe: Classe Base: A classe que concede as características a uma outra classe. Classe Derivada: A classe que herda as características da classe base. O fato de as classes derivadas herdarem atributos das classes bases assegura que programas orientados a objetos cresçam de forma linear e não geometricamente em complexidade. Cada nova classe derivada não possui interações imprevisíveis em relação ao restante do código do sistema. Com o uso da herança, uma classe derivada geralmente é uma implementação especifica de um caso mais geral. A classe derivada deve apenas definir as características que a tornam única 1.
+		
+		Por exemplo, imagine que já exista uma classe que defina o comportamento de um dado objeto da vida real, por exemplo, animal. A ideia de herança é facilitar a programação e orientação a objetos. Uma classe A deve herdar de uma classe B quando podemos dizer que A é um B. Por exemplo, imagine que já exista uma classe que defina o comportamento de um dado objeto da vida real, por exemplo, animal. A classe Animal pode ter atributos como nome, idade, peso, altura, etc. Agora, imagine que você queira criar uma classe Cachorro. Como o cachorro é um animal, você pode criar uma classe Cachorro que herda todos os atributos e métodos da classe Animal. Além disso, você pode adicionar novos atributos e métodos específicos da classe Cachorro, como latir, abanar o rabo, etc. Isso é possível graças à herança 14.
+	
+4.Quais os outros nomes para superclasse e subclasse?
+	
+	a nova classe herda tudo daquela já criada sem precisar escrever denovo 
+			ela é chamada de 
+				-Subclasse, 
+				-classe derivada, 
+				-classe filha
+			de quem ela esta herdando é chamado de 
+				-Superclasse, 
+				-classe base, 
+				-classe mãe, 
+				-classe pai
+			ela pode tmbm mudar o que herdou e ou add mais atributos e ou metodos
+			
+5.Uma subclasse pode ter mais propriedades e mais operações do que sua superclasse? E menos?
+	Pode ter mais propriedades e mais operações; Não pode ter menos ,visto que se ela herda tudo , logo ela tem no mínimo o mesmo tanto que a classe pai 
+
+
+6. Explique os conceitos de Especialização e Generalização.
+
+	Especialização : é criar novas classes subclasses que vão herdar atributos e metodos de uma superclasse
+		Exemplo dos alunos : uma classe tem os atributos em comum para os três tipos de estudantes e outras duas classes herdam dessa superclasse e adicionam mais informações específicas que as tornem unicas 
+		
+	Generalização  : é quando eu so tenho a classe especifica(ela sozinha com todos os atributos e metodos) do estudante que faz estagio e eu preciso adicionar outros tipos de estudantes. 
+	Agora eu pego os atributos desta classe especifica que vai ser comumt entre todos os estudantes e crio uma superclasse, para quando for 
+	adicionar um novo tipo de estudante , extender a esta superclasse e so adicionar o que vai deixar unico novo tipo de estudante ; 
+		Exemplo é começar por uma classe que tem tudo e o que a torna unica , e apartir dela criar uma generalização. Ver qual atributo dela vai ser comum a outras classes específicas 
+
+		Em programação orientada a objetos, generalização é um conceito que consiste em obter similaridades entre as várias classes e partir destas similaridades, novas classes são definidas. Estas classes são chamadas superclasses. Por definição, o que é mais geral é uma classe base, uma classe mãe. A especialização é por definição uma classe derivada, filha. Ela possui características que só dizem respeita àquela classe. Ali há membros que são especiais para aquela classe. O princípio de substituição de Liskov explica bem sobre o fato de um objeto especializado ter que ser o mesmo que um objeto generalizado 123.
+
+			Um exemplo de generalização pode ser uma classe Veiculo que contém métodos como locomover(), parar(), e ligarLanternas(). A classe Carro pode herdar todos os métodos da classe Veiculo e ainda especificar novas funções e atributos, como travarPortas() e abrirVidros(). Já a classe Moto pode herdar todos os métodos da classe Veiculo sem especificar novas funções ou atributos 1.
+			
+			Segue abaixo um exemplo de código em Java para a generalização e especialização:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			// Generalização
+			class Veiculo {
+			    public void locomover() {
+			        System.out.println("Veículo se locomovendo...");
+			    }
+			    public void parar() {
+			        System.out.println("Veículo parando...");
+			    }
+			    public void ligarLanternas() {
+			        System.out.println("Ligando lanternas...");
+			    }
+			}
+			
+			// Especialização
+			class Carro extends Veiculo {
+			    public void travarPortas() {
+			        System.out.println("Travando portas...");
+			    }
+			    public void abrirVidros() {
+			        System.out.println("Abrindo vidros...");
+			    }
+			}
+			
+			class Moto extends Veiculo {
+			    // Nenhuma particularidade
+			}
+			
+7.Quais os tipos de herança de classes? 
+	Herança simples - onde uma classe filha so herda de uma classe pai
+	Herança multipla- onde uma classe filha herda mais de uma classe pai
+	
+	Existem dois tipos de herança de classes em programação orientada a objetos: herança simples e herança múltipla 1.
+	
+	Na herança simples, uma classe filha herda atributos e métodos de apenas uma classe pai. A classe filha pode adicionar novos atributos e métodos específicos, mas não pode herdar de mais de uma classe pai. Por exemplo, considere uma classe Animal que contém métodos como locomover(), parar(), e ligarLanternas(). A classe Cachorro pode herdar todos os métodos da classe Animal e ainda especificar novas funções e atributos, como latir(), abanarRabo(), etc23. Segue abaixo um exemplo de código em Java para a herança simples:
+	
+	Java
+	Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+	
+	class Animal {
+	    public void locomover() {
+	        System.out.println("Animal se locomovendo...");
+	    }
+	    public void parar() {
+	        System.out.println("Animal parando...");
+	    }
+	    public void ligarLanternas() {
+	        System.out.println("Ligando lanternas...");
+	    }
+	}
+	
+	class Cachorro extends Animal {
+	    public void latir() {
+	        System.out.println("Au au!");
+	    }
+	    public void abanarRabo() {
+	        System.out.println("Abanando o rabo...");
+	    }
+	}
+	Na herança múltipla, uma classe filha herda atributos e métodos de duas ou mais classes pai. No entanto, a herança múltipla pode causar problemas de ambiguidade quando duas classes pai possuem métodos ou atributos com o mesmo nome. Por esse motivo, a herança múltipla não é suportada em todas as linguagens de programação orientada a objetos, incluindo Java 4. Segue abaixo um exemplo de código em Java para a herança múltipla:
+	
+	Java
+	Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+	
+	class Pai1 {
+	    public void metodo1() {
+	        System.out.println("Método 1 da classe Pai1");
+	    }
+	}
+	
+	class Pai2 {
+	    public void metodo2() {
+	        System.out.println("Método 2 da classe Pai2");
+	    }
+	}
+	
+	class Filha extends Pai1, Pai2 {
+	    public void metodo3() {
+	        System.out.println("Método 3 da classe Filha");
+	    }
+	}
+	
+8.
+
+
+9.Explique o mecanismo de overriding.
+	È reutilizar um pedaço do metodo que herdou da classe pai na classe filha alterando algumas coisas .
+	
+	até aqui foram 2 horas lendo o slide e respondendo as 8 questões

@@ -1,7 +1,18 @@
 
 Agenda do conteúdo do slide 06
+
 	Motivação
-	
+		motivos 
+		exemplos teorico
+		Representação UML  do exemplo
+		codigo do exemplo
+		mais conceitos
+		conceito especialização e generalização
+		Representação UML de todo o exemplo
+		Código de um exemplo prático do UML usando os termos super e extends
+		vantagens de usar herança em classes
+		herança Simples Herança Multipla
+		
 	Generalização x Especialização
 	
 	Representação Diagramática

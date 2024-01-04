@@ -1,5 +1,2 @@
-Um exemplo pratico do tipo de relacionamento composição de objetos em código ,
-Um exemplo prático do uso da  coleção do tipo interface Set pros 3 classes que a implementa
-As funções de como percorrer iterar os elementos das coleções 
-Não tem a interface List Implementando as classes LINKEDLIST, VECTOR 
-																	e nem a interface List implementando a classe STACK
+Um exemplo de generalização
+UM exemplo para o tipo de classe que herda de varias outras classes
