@@ -12,7 +12,9 @@ Agenda do conteúdo do slide 06
 		Código de um exemplo prático do UML usando os termos super e extends
 		vantagens de usar herança em classes
 		herança Simples Herança Multipla
-		
+		Redefinição de métodos
+			exemplo um conta e contaespecial
+			exemplo dois é sobreescrever o metodo 
 	Generalização x Especialização
 	
 	Representação Diagramática
@@ -26,6 +28,10 @@ Agenda do conteúdo do slide 06
 	Redefinição de Métodos
 	
 	Polimorfismo
+		conceito
+		exemplo sem utilizar os conceitos principais de PROGRAMAÇÃO ORIENTADA AO OBJETO ( herança,Sobrecarga de metodos ,Poliformismo )
+		exemplo     utilizando os conceitos de POO 
+		Usando o poliformismo ( o código em java)
 	
 	Ligação Dinâmica
 

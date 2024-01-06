@@ -35,6 +35,158 @@
 2.O que é herança de classes?
 			Herança é o compartilhamento de atributos e metodos entre classes que estão relacionadas de um jeito hierarquizado
 
+				Aqui estão 10 exemplos de herança de classes em programação orientada a objetos:
+				
+				Animal e Cachorro: A classe Animal pode ter atributos como nome, idade, peso, altura, etc. A classe Cachorro pode herdar todos os atributos e métodos da classe Animal e ainda especificar novas funções e atributos, como latir, abanar o rabo, etc12.
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Animal {
+				    public String nome;
+				    public int idade;
+				    public double peso;
+				    public double altura;
+				}
+				
+				class Cachorro extends Animal {
+				    public void latir() {
+				        System.out.println("Au au!");
+				    }
+				    public void abanarRabo() {
+				        System.out.println("Abanando o rabo...");
+				    }
+				}
+				Veículo e Carro: A classe Veículo pode ter métodos como locomover(), parar(), e ligarLanternas(). A classe Carro pode herdar todos os métodos da classe Veículo e ainda especificar novas funções e atributos, como travarPortas() e abrirVidros()1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Veiculo {
+				    public void locomover() {
+				        System.out.println("Veículo se locomovendo...");
+				    }
+				    public void parar() {
+				        System.out.println("Veículo parando...");
+				    }
+				    public void ligarLanternas() {
+				        System.out.println("Ligando lanternas...");
+				    }
+				}
+				
+				class Carro extends Veiculo {
+				    public void travarPortas() {
+				        System.out.println("Travando portas...");
+				    }
+				    public void abrirVidros() {
+				        System.out.println("Abrindo vidros...");
+				    }
+				}
+				Pessoa e Funcionário: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Funcionário pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como cargo, salário, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Funcionario extends Pessoa {
+				    public String cargo;
+				    public double salario;
+				}
+				Figura e Retângulo: A classe Figura pode ter métodos como calcularÁrea() e calcularPerímetro(). A classe Retângulo pode herdar todos os métodos da classe Figura e ainda especificar novas funções e atributos, como largura e altura1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Figura {
+				    public double calcularÁrea() {
+				        return 0;
+				    }
+				    public double calcularPerímetro() {
+				        return 0;
+				    }
+				}
+				
+				class Retângulo extends Figura {
+				    public double largura;
+				    public double altura;
+				    public double calcularÁrea() {
+				        return largura * altura;
+				    }
+				    public double calcularPerímetro() {
+				        return 2 * (largura + altura);
+				    }
+				}
+				Pessoa e Estudante: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Estudante pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como curso, matrícula, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Estudante extends Pessoa {
+				    public String curso;
+				    public int matricula;
+				}
+				Conta e ContaCorrente: A classe Conta pode ter atributos como número da conta, saldo, etc. A classe ContaCorrente pode herdar todos os atributos e métodos da classe Conta e ainda especificar novas funções e atributos, como limite, taxaDeJuros, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Conta {
+				    public int numeroDaConta;
+				    public double saldo;
+				}
+				
+				class ContaCorrente extends Conta {
+				    public double limite;
+				    public double taxaDeJuros;
+				}
+				
+				
+				Pessoa e Cliente: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Cliente pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como número de telefone, endereço de e-mail, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Cliente extends Pessoa {
+				    public String numeroDeTelefone;
+				    public String enderecoDeEmail;
+				}
+				Conta e ContaPoupança: A classe Conta pode ter atributos como número da conta, saldo, etc. A classe ContaPoupança pode herdar todos os atributos e métodos da classe Conta e ainda especificar novas funções e atributos, como taxa de juros, data de vencimento, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Conta {
+				    public int numeroDaConta;
+				    public double saldo;
+				}
+				
+				class ContaPoupança extends Conta {
+				    public double taxaDeJuros;
+				    public String dataDeVencimento;
+				}
+				Pessoa e Professor: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Professor pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como disciplina, salário, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Professor extends Pessoa {
+				    public String disciplina;
+				    public double salario;
+				}
 3.Quais as vantagens do uso de herança?
 
 		O processo de desenvolvimento vai ser mais eficiente pela organização hierarquica das classes
@@ -173,10 +325,572 @@
 	    }
 	}
 	
-8.
+8.O que são membros protegidos?
+	São atributos e ou metodos da classe pai(superclasse) definidos com acessibilidade protected que so podem ser acessados pela propria classe a qual a definiu e pelas subclasses
 
-
-9.Explique o mecanismo de overriding.
-	È reutilizar um pedaço do metodo que herdou da classe pai na classe filha alterando algumas coisas .
+	pear um exemplo disso
 	
-	até aqui foram 2 horas lendo o slide e respondendo as 8 questões
+9.Explique o mecanismo de overriding.
+	È reutilizar um pedaço do metodo que herdou da classe pai na classe filha alterando somente a implementação e sem mudar 
+	o nome , 
+	o tipo, ordem e a quantidade de parametros , 
+	o tipo de dado que o metodo vai retornar.
+	a semântica e visibilidade 
+
+		O mecanismo de overriding é um recurso da programação orientada a objetos que permite que uma classe filha forneça uma implementação específica de um método que já é fornecido por uma de suas superclasses ou classes pai. A sobrescrita ocorre quando um método cuja assinatura já tenha sido definida na classe pai é reescrito na classe filha com uma implementação diferente.
+		
+		Aqui estão 5 exemplos de overriding em Java:
+		
+		Animal e Cachorro:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    public void mover() {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		Veículo e Moto:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Veiculo {
+		    public void acelerar() {
+		        System.out.println("Veículo acelerando...");
+		    }
+		}
+		
+		class Moto extends Veiculo {
+		    @Override
+		    public void acelerar() {
+		        System.out.println("Moto acelerando...");
+		    }
+		}
+		Pessoa e Funcionário:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Pessoa {
+		    public void trabalhar() {
+		        System.out.println("Pessoa trabalhando...");
+		    }
+		}
+		
+		class Funcionario extends Pessoa {
+		    @Override
+		    public void trabalhar() {
+		        System.out.println("Funcionário trabalhando...");
+		    }
+		}
+		Figura e Retângulo:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Figura {
+		    public double calcularArea() {
+		        return 0;
+		    }
+		}
+		
+		class Retangulo extends Figura {
+		    public double largura;
+		    public double altura;
+		
+		    @Override
+		    public double calcularArea() {
+		        return largura * altura;
+		    }
+		}
+		Pessoa e Cliente:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Pessoa {
+		    public void comprar() {
+		        System.out.println("Pessoa comprando...");
+		    }
+		}
+		
+		class Cliente extends Pessoa {
+		    @Override
+		    public void comprar() {
+		        System.out.println("Cliente comprando...");
+		    }
+		}
+	
+10. Quais são as características de um método sobrescrito?
+
+	O metodo sobreescrito :
+	 Tem que ter o nome e assinatura igual o metodo da classe pai
+	 Tem que retornar um tipo de dado igual ou compatível com o mesmo tipo de dado que o metodo da classe pai
+	 Tem que ter o mesmo nível de acesso permissível  que o metodo da classe pai  
+	 Tem que lançar as mesmas excessões ( ou mais específicas para o método )que o metodos da classe pai
+	 Tem que ter a mesma implementação (ou uma mais especifica) que o metodo da classe pai
+
+		Claro! Aqui estão exemplos de código Java que ilustram cada uma das cinco características de um método sobrescrito:
+		
+		Método sobrescrito deve ter o mesmo nome e a mesma assinatura do método da classe pai:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    public void mover() {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		Método sobrescrito deve ter o mesmo tipo de retorno ou um tipo de retorno compatível com o método da classe pai:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    public Animal reproduzir() {
+		        return new Animal();
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public Cachorro reproduzir() {
+		        return new Cachorro();
+		    }
+		}
+		Método sobrescrito deve ter o mesmo ou um nível de acesso mais permissivo do que o método da classe pai:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    protected void mover() {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		Método sobrescrito pode lançar as mesmas exceções ou exceções mais específicas do que o método da classe pai:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    public void mover() throws Exception {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() throws RuntimeException {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		Método sobrescrito deve ter a mesma ou uma implementação mais específica do que o método da classe pai:
+		Java
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		
+		class Animal {
+		    public void mover() {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() {
+		        super.mover();
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+
+11.O que se pode afirmar quanto à visibilidade dos métodos sobrescritos?
+
+	a regra diz que o metodo sobreescrito na classe filha pode ter visibilidade igual ou tem que ter um nível de acessibilidade mais 
+	permissiva que o metodo da classe pai.
+	
+	Isso quer dizer que não deve usar private na acessibilidade do metodo sobreescrito de uma classe filha. 	
+	
+			Na programação orientada a objetos, a visibilidade dos métodos sobrescritos deve ser igual ou mais permissiva do que a visibilidade do método original na classe pai. Isso significa que um método público na classe pai pode ser sobrescrito como público ou protegido em uma classe filha, mas não como privado. Da mesma forma, um método protegido na classe pai pode ser sobrescrito como público ou protegido em uma classe filha, mas não como privado. No entanto, um método privado na classe pai não pode ser sobrescrito em uma classe filha, pois não é visível fora da classe pai 1.
+			
+			Aqui está um exemplo de código Java que ilustra a sobrescrita de um método com visibilidade mais permissiva:
+			
+			Java
+			Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+			
+			class Animal {
+			    protected void mover() {
+			        System.out.println("Um animal pode se mover");
+			    }
+			}
+			
+			class Cachorro extends Animal {
+			    @Override
+			    public void mover() {
+			        System.out.println("Cachorro pode caminhar e correr");
+			    }
+			}
+			
+			Neste exemplo, o método mover() da classe Animal é protegido, o que significa que ele somente pode ser acessado por classes filhas ou por ele mesmo. A classe Cachorro sobrescreve o método mover() da classe Animal com uma implementação mais específica que é pública, o que significa que ele(metodo sobreescrito da classe Cachorro) pode ser acessado por qualquer classe 			
+			--------pode assim também----------
+			class Animal {
+			    protected void mover() {
+			        System.out.println("Um animal pode se mover");
+			    }
+			}
+			
+			class Cachorro extends Animal {
+			    @Override
+			    protected void mover() {
+			        System.out.println("Cachorro pode caminhar e correr");
+			    }
+			}
+			-------pode assim também-----------
+			class Animal {
+			    public void mover() {
+			        System.out.println("Um animal pode se mover");
+			    }
+			}
+			
+			class Cachorro extends Animal {
+			    @Override
+			    protected void mover() {
+			        System.out.println("Cachorro pode caminhar e correr");
+			    }
+			}
+			-------pode assim também-----------
+			class Animal {
+			    public void mover() {
+			        System.out.println("Um animal pode se mover");
+			    }
+			}
+			
+			class Cachorro extends Animal {
+			    @Override
+			    public void mover() {
+			        System.out.println("Cachorro pode caminhar e correr");
+			    }
+			}
+	
+12. O que é polimorfismo?
+	O polimorfismo é um dos conceitos fundamentais da programação orientada a objetos. Ele permite que um objeto possa ser tratado como se fosse de vários tipos diferentes, dependendo do contexto em que é usado. Isso significa que um objeto pode ser usado como se fosse uma instância de sua classe base ou como se fosse uma instância de qualquer uma de suas classes derivadas. O polimorfismo é uma técnica poderosa que permite escrever código mais flexível e reutilizável.
+		
+		Aqui estão alguns exemplos de polimorfismo em cenários práticos:
+		
+		Métodos comuns em classes diferentes:
+		Java
+		
+		class Animal {
+		    public void mover() {
+		        System.out.println("Um animal pode se mover");
+		    }
+		}
+		
+		class Cachorro extends Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		
+		class Gato extends Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Gato pode andar e correr");
+		    }
+		}
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Animal animal1 = new Animal();
+		        Animal animal2 = new Cachorro();
+		        Animal animal3 = new Gato();
+		
+		        animal1.mover();
+		        animal2.mover();
+		        animal3.mover();
+		    }
+		}
+		
+		no código acima eu criei uma variavel do tipo da superclasse Animal e estanciei para dentro dela o objeto de uma das suas subclasses
+		criei variaveis com o mesmo tipo de classe Pai e estanciei objetos com os contrutores das classes filhas
+		
+		Criei uma variavel com o nome 'animal1' , estanciei para dentro dela um objeto com o construtor da subclasse Cachorro;
+		
+		Cria uma variavel do tipo da classe pai , e coloca pra dentro dela objeto da classe filha
+		
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		Neste exemplo, as classes Cachorro e Gato herdam o método mover() da classe Animal e o sobrescrevem com implementações específicas. O método mover() é então chamado em objetos das três classes diferentes, mas produz resultados diferentes dependendo do tipo de objeto.
+		
+		Métodos com argumentos polimórficos:
+		Java
+		
+		class Forma {
+		    public double calcularArea() {
+		        return 0;
+		    }
+		}
+		
+		class Retangulo extends Forma {
+		    public double largura;
+		    public double altura;
+		
+		    @Override
+		    public double calcularArea() {
+		        return largura * altura;
+		    }
+		}
+		
+		class Circulo extends Forma {
+		    public double raio;
+		
+		    @Override
+		    public double calcularArea() {
+		        return Math.PI * raio * raio;
+		    }
+		}
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Forma forma1 = new Retangulo();
+		        Forma forma2 = new Circulo();
+		
+		        double area1 = calcularArea(forma1);
+		        double area2 = calcularArea(forma2);
+		
+		        System.out.println("Área do retângulo: " + area1);
+		        System.out.println("Área do círculo: " + area2);
+		    }
+		
+		    public static double calcularArea(Forma forma) {
+		        return forma.calcularArea();
+		    }
+		}
+		
+	    dentro do main eu criei uma função que retorna o resultado da execução do método pelo objeto que foi passado por parâmetro
+	    sendo assim eu estou criando um método que recebe como parâmetro objeto  
+		
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		Neste exemplo, as classes Retangulo e Circulo herdam o método calcularArea() da classe Forma e o sobrescrevem com implementações específicas. O método calcularArea() é então chamado em objetos das duas classes diferentes, mas é passado como argumento para um método que espera um objeto da classe base Forma.
+		
+		Interfaces polimórficas:
+		Java
+		
+		interface Animal {
+		    public void mover();
+		}
+		
+		class Cachorro implements Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		
+		class Gato implements Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Gato pode andar e correr");
+		    }
+		}
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Animal animal1 = new Cachorro();
+		        Animal animal2 = new Gato();
+		
+		        animal1.mover();
+		        animal2.mover();
+		    }
+		}
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		Neste exemplo, a interface Animal define um método mover() que é implementado pelas classes Cachorro e Gato. Os objetos das duas classes são então tratados como objetos da interface Animal, permitindo que o método mover() seja chamado em ambos os objetos.
+
+-------------interface 
+		Em programação orientada a objetos, uma interface é um conjunto de métodos abstratos que definem um contrato para as classes que a implementam. Uma interface define um conjunto de métodos que uma classe deve implementar, mas não fornece uma implementação real desses métodos. Em vez disso, as classes que implementam a interface fornecem suas próprias implementações para os métodos definidos na interface. As interfaces são usadas para definir um conjunto comum de métodos que podem ser usados por várias classes diferentes, independentemente de sua hierarquia de herança. Isso permite que as classes sejam mais flexíveis e reutilizáveis, pois podem implementar várias interfaces diferentes, em vez de herdar de uma única classe base 12.
+		
+		Aqui está um exemplo de código Java que ilustra o uso de interfaces:
+		
+		Java
+		
+		interface Animal {
+		    public void mover();
+		}
+		
+		class Cachorro implements Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Cachorro pode caminhar e correr");
+		    }
+		}
+		
+		class Gato implements Animal {
+		    @Override
+		    public void mover() {
+		        System.out.println("Gato pode andar e correr");
+		    }
+		}
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Animal animal1 = new Cachorro();
+		        Animal animal2 = new Gato();
+		
+		        animal1.mover();
+		        animal2.mover();
+		    }
+		}
+		Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+		Neste exemplo, a interface Animal define um método mover() que é implementado pelas classes Cachorro e Gato. Os objetos das duas classes são então tratados como objetos da interface Animal, permitindo que o método mover() seja chamado em ambos os objetos.
+
+			O polimorfismo 
+				é um dos conceitos fundamentais da programação orientada a objetos. Ele permite que um objeto possa ser tratado como se fosse de vários tipos diferentes, dependendo do contexto em que é usado. Isso significa que um objeto pode ser usado como se fosse uma instância de sua classe base ou como se fosse uma instância de qualquer uma de suas classes derivadas. O polimorfismo é uma técnica poderosa que permite escrever código mais flexível e reutilizável.
+			
+			Algumas vantagens do polimorfismo são:
+			
+			Flexibilidade: 
+				O polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme, facilitando a criação de sistemas flexíveis e extensíveis.
+			
+			Reutilização de código: 
+				O polimorfismo permite que o mesmo código seja usado com objetos de diferentes classes, desde que esses objetos possuam os mesmos métodos e atributos.
+			
+			Manutenção simplificada: 
+				O polimorfismo permite que o código seja reutilizado em diferentes contextos, sem precisar ser reescrito para cada classe específica.
+			
+			Algumas desvantagens do polimorfismo são:
+			
+			Complexidade: 
+				O polimorfismo pode tornar o código mais complexo e difícil de entender, especialmente em sistemas grandes e complexos.
+			
+			Desempenho: 
+				O polimorfismo pode afetar o desempenho do sistema, especialmente em sistemas que exigem alta velocidade de processamento.
+			
+			Um exemplo simples de polimorfismo é uma classe Animal que possui um método mover(). As classes Cachorro e Gato herdam a 
+			classe Animal e sobrescrevem o método mover() com implementações específicas. Os objetos das três classes diferentes podem 
+			então ser tratados como objetos da classe Animal, permitindo que o método mover() seja chamado em todos os objetos, mas 
+			produz resultados diferentes dependendo do tipo de objeto.
+
+							---------------ligação dinamica
+							
+							Explique sobre o mescanismo de ligação dinâmica em programação orientado a objeto , cite 5 exemplos praticos em códigos java cada um com um contexto diferente . Explique para que serve a ligação dinâmica . Cite um exemplo onde é necessario utilizar a ligação dinâmica de um jeito bastante contextualizado . Cite todas as vantagens e desvantagens da ligação dinâmica . E diga qual é a relação que ligação dinâmica tem com o conceito de poliformismo . Cite também a diferença o poliformismo para herança .
+							Procurando por mecanismo de ligação dinâmica em programação orientada a objeto
+							
+							Procurando por exemplos práticos de ligação dinâmica em programação orientada a objeto em Java
+							
+							Procurando por vantagens e desvantagens da ligação dinâmica em programação orientada a objeto
+							
+							Procurando por relação entre ligação dinâmica e polimorfismo em programação orientada a objeto
+							
+							Procurando por diferença entre polimorfismo e herança em programação orientada a objeto
+							
+							Gerando respostas para você…
+							
+							A ligação dinâmica é um mecanismo que permite determinar a exata implementação de uma requisição com base no nome da requisição (operação) e no objeto que executa a operação no tempo de execução. Geralmente acontece quando uma função membro de uma classe derivada é invocada usando um ponteiro para sua classe base. A ligação dinâmica é uma técnica poderosa que permite escrever código mais flexível e reutilizável.
+							
+							Aqui estão cinco exemplos práticos de ligação dinâmica em Java:
+							
+							Sistema de gerenciamento de estoque: Suponha que você esteja desenvolvendo um sistema de gerenciamento de estoque para uma loja. O sistema deve ser capaz de lidar com vários tipos diferentes de produtos, como roupas, eletrônicos, livros, etc. Cada tipo de produto tem suas próprias propriedades e comportamentos específicos, mas todos os produtos devem ter algumas propriedades e comportamentos em comum, como um nome, um preço e um método para calcular o preço total com impostos. Para permitir que vários tipos diferentes de produtos sejam usados no sistema, você pode definir uma interface Produto que define essas propriedades e comportamentos comuns. Cada tipo de produto pode então implementar a interface Produto para fornecer sua própria implementação dessas propriedades e comportamentos comuns.
+							
+							Sistema de gerenciamento de funcionários: Suponha que você esteja desenvolvendo um sistema de gerenciamento de funcionários para uma empresa. O sistema deve ser capaz de lidar com vários tipos diferentes de funcionários, como gerentes, programadores, designers, etc. Cada tipo de funcionário tem suas próprias propriedades e comportamentos específicos, mas todos os funcionários devem ter algumas propriedades e comportamentos em comum, como um nome, um salário e um método para calcular o salário líquido. Para permitir que vários tipos diferentes de funcionários sejam usados no sistema, você pode definir uma interface Funcionario que define essas propriedades e comportamentos comuns. Cada tipo de funcionário pode então implementar a interface Funcionario para fornecer sua própria implementação dessas propriedades e comportamentos comuns.
+							
+							Sistema de gerenciamento de animais: Suponha que você esteja desenvolvendo um sistema de gerenciamento de animais para um zoológico. O sistema deve ser capaz de lidar com vários tipos diferentes de animais, como leões, tigres, ursos, etc. Cada tipo de animal tem suas próprias propriedades e comportamentos específicos, mas todos os animais devem ter algumas propriedades e comportamentos em comum, como um nome, uma idade e um método para emitir um som. Para permitir que vários tipos diferentes de animais sejam usados no sistema, você pode definir uma interface Animal que define essas propriedades e comportamentos comuns. Cada tipo de animal pode então implementar a interface Animal para fornecer sua própria implementação dessas propriedades e comportamentos comuns.
+							
+							Sistema de gerenciamento de veículos: Suponha que você esteja desenvolvendo um sistema de gerenciamento de veículos para uma locadora de carros. O sistema deve ser capaz de lidar com vários tipos diferentes de veículos, como carros, motos, caminhões, etc. Cada tipo de veículo tem suas próprias propriedades e comportamentos específicos, mas todos os veículos devem ter algumas propriedades e comportamentos em comum, como um nome, um preço e um método para calcular o preço total com impostos. Para permitir que vários tipos diferentes de veículos sejam usados no sistema, você pode definir uma interface Veiculo que define essas propriedades e comportamentos comuns. Cada tipo de veículo pode então implementar a interface Veiculo para fornecer sua própria implementação dessas propriedades e comportamentos comuns.
+							
+							Sistema de gerenciamento de formas: Suponha que você esteja desenvolvendo um sistema de gerenciamento de formas para uma empresa de design. O sistema deve ser capaz de lidar com vários tipos diferentes de formas, como retângulos, círculos, triângulos, etc. Cada tipo de forma tem suas próprias propriedades e comportamentos específicos, mas todas as formas devem ter algumas propriedades e comportamentos em comum, como
+							
+							Saiba mais
+							
+							
+							1
+							
+							pt.wikipedia.org
+							2
+							wikiwand.com
+							3
+							cin.ufpe.br
+							4
+							
+							estrategiaconcursos.com.br
+							5
+							
+							jrossetto.com.br
+							6
+							professores.dcc.ufla.br
+							7
+							ichi.pro
+							8
+							
+							devmedia.com.br
+							9
+							
+							devmedia.com.br
+							10
+							
+							pt.stackoverflow.com
+							11
+							
+							passeidireto.com
+							12
+							pt.wikibooks.org
+							13
+							desenvolvimento.shift.com.br
+							14
+							
+							devmedia.com.br
+							15
+							
+							dca.fee.unicamp.br
+							16
+							
+							bing.com
+							
+							
+							. Explique para que serve a ligação dinâmica
+							Procurando por para que serve a ligação dinâmica em programação orientada a objetos
+							
+							Gerando respostas para você…
+							
+							A ligação dinâmica é um mecanismo que permite determinar a exata implementação de uma requisição com base no nome da requisição (operação) e no objeto que executa a operação no tempo de execução. Geralmente acontece quando uma função membro de uma classe derivada é invocada usando um ponteiro para sua classe base. A implementação de uma classe derivada será invocada ao invés da operação da classe base. Isto permite a substituição de uma implementação particular usando a mesma interface, o que por sua vez habilita o uso de polimorfismo.
+							
+							Algumas vantagens da ligação dinâmica são:
+							
+							Flexibilidade: A ligação dinâmica permite que objetos de diferentes classes sejam tratados de maneira uniforme, facilitando a criação de sistemas flexíveis e extensíveis.
+							
+							Reutilização de código: A ligação dinâmica permite que o mesmo código seja usado com objetos de diferentes classes, desde que esses objetos possuam os mesmos métodos e atributos.
+							
+							Manutenção simplificada: A ligação dinâmica permite que o código seja reutilizado em diferentes contextos, sem precisar ser reescrito para cada classe específica.
+							
+							Algumas desvantagens da ligação dinâmica são:
+							
+							Complexidade: A ligação dinâmica pode tornar o código mais complexo e difícil de entender, especialmente em sistemas grandes e complexos.
+							
+							Desempenho: A ligação dinâmica pode afetar o desempenho do sistema, especialmente em sistemas que exigem alta velocidade de processamento.
+							
+							Um exemplo contextualizado de uso da ligação dinâmica é quando temos uma classe base e várias classes derivadas que implementam a mesma interface. A ligação dinâmica permite que o mesmo método seja chamado em objetos de diferentes classes, desde que esses objetos possuam os mesmos métodos e atributos.
+							
+							A ligação dinâmica está intimamente relacionada com o conceito de polimorfismo, que permite que um objeto possa ser tratado como se fosse de vários tipos diferentes, dependendo do contexto em que é usado. A ligação dinâmica é uma das técnicas usadas para implementar o polimorfismo em sistemas orientados a objetos.
+							
+							A diferença entre polimorfismo e herança é que o polimorfismo permite que um objeto possa ser tratado como se fosse de vários tipos diferentes, enquanto a herança permite que uma classe possa herdar propriedades e comportamentos de outra classe. 
+
+
+
+
+
+	até aqui foram 4h 15 minutos lendo o slide e respondendo as 8 questões
+	
+		+ 54 minutos
