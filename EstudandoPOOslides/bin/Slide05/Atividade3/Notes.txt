@@ -1,0 +1,15 @@
+Atividade 3
+
+3.Crie uma classe TurmaArrayList para funcionar com estrutura de dados redimensionável dinâmicamente (ArrayList, por exemplo) ao invés de array.
+	É necessário modificar todos os métodos.
+	O método exibir deve usar iterator para varrer a lista
+	deve usar get() para pegar um elemento na lista.
+	Os métodos excluir devem varrer o ArrayList usando loops tradicionais (for).
+Observe que o programa TesteTurma pode ser utilizado com a nova definição da classe TurmaArrayList bastando apenas 
+mudar as chamadas da classe Turma para TurmaArrayList.
+	
+	tem um bug na lógica , o metodo trancar ele esta exibindo a mensagem da matricula que não foi encontrada mesmo quando foi encontrada
+		solução uso uma flag  demorei ums 6 minutos para rsolver este problema
+
+
+demorei para fazer 1h 15 minutos

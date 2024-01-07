@@ -1,0 +1,37 @@
+Exercicio revisao 6
+6. O que é um mapeamento ou tabela ?
+
+	é uma coleção de objetos que é mais eficiente manipular-los
+	
+	È uma estrutura de dados em que cada elemento uma chave que mapeia um valor. E estes dois podem ser objetos
+	A chave não pode ser repetida , mas o valor pode. 
+	Cada chave so pode mapear um valor
+	
+	Serve para acessar um elemento dentro de um grupo de elementos aleatoriamente através da chave
+	
+						
+				
+	Em programação orientada a objetos, um mapeamento ou tabela é uma estrutura de dados que armazena informações sobre objetos. Em outras palavras, um mapeamento é uma coleção de objetos que permite que os objetos sejam acessados e manipulados de forma eficiente. Em Java, por exemplo, um mapeamento pode ser criado usando a classe HashMap ou a classe TreeMap. 
+	Para adicionar elementos a um mapeamento, você pode usar o método put(). Para remover elementos, você pode usar o método remove()1.
+		
+	Exemplo simples
+	
+				 Tenho uma loja e quero saber a quantas unidades eu tenho de cada produto
+				
+					Map<		key		 	,	 	value	  >
+					Map<  Nome do Produto   , Quantas unidades>
+				
+	
+		Exemplo médio 	
+						Tenho um sistema de gerenciamento de funcionarios 
+																		e cada funcionario tem um id único
+																		e cada um tem varia informações
+																									-nome
+																									-cargo
+																									-salario
+																									-endereço
+				
+							Map<   key 	,	 	value	    >
+							Map<   id 	,OBJETO funcionario >
+							
+demorei 1h20' 	

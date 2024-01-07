@@ -1,0 +1,10 @@
+Atividade 4 
+
+Modificar os seguintes métodos da classe TurmaArrayList: 
+void listar
+Estudante pesquisar (int matricula) 
+void trancar (int matricula) 
+void trancar (Estudante e)
+	para percorrer a lista usando o laço “for-each”.
+
+demorei 30 minutos para fazer este exercicio

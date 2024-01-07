@@ -1,0 +1,53 @@
+19h 50
+-28 minutos 
+
+7. O que é uma Lista? 
+
+	lembre-se , cada posição desta array dinamica não tem o elemnto/objeto atribuido , tem a referência dele
+	
+	Um grupo de elementos em uma ordem linear, sequencialmente com antecessores e sucessores.
+	pode repitir elementos
+	
+	para cada elemento tem um indice , começando com 0 
+	
+	este grupo é redimensinavel e ele pode ter elementos de tipo de dados diferente e tipo de dados especifico.
+	
+	funções 
+				size()
+				isEmpty()
+				add()
+				get()	   indice
+				set()      indice
+				contains()
+				indexOf()
+				clear()
+				remove()   indice
+				remove()   elemento
+				
+	List é uma interface que pode implementar as classes
+														ArrayList
+														LinkedList
+														Vector
+																e Vector tem uma classe filha que é a classe STACK
+	
+	Exemplo simples : 
+		criar uma lista com elementos de tipo de dados diferente
+		criar uma lista de um tipo de dado especifico com cada elemento sendo uma palavra
+	
+	
+	ExemploMedio 
+		criar uma lista de objetos do tipo abstrato
+					
+					ArrayList
+					
+					LinkedList
+					
+					Vector
+
+	+conteúdo
+o vector é sincronizado e por isso é mais lento , porfavor explique isso com mais detalhes sobre a implementação do list com o vector
+						
+quero que cite um exemplo de codigo java em um ambiente multithread onde tem várias threads  acessando a lista ao mesmo tempo  com a interface list implementando na classe vector . Explique o contexto de o porque do thread esta usando a lista neste contexto.
+
+
+demorei 4horas e 54 minutos 

@@ -1,0 +1,2 @@
+Um exemplo de generalização
+UM exemplo para o tipo de classe que herda de varias outras classes ( isso n tem em java)

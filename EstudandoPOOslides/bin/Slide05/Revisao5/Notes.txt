@@ -1,0 +1,37 @@
+Exercício de revisão 5 
+
+5.O que é um Conjunto?
+	É como se tivesse criado um novo tipo de unidade , que é um grupo com varios objetos sem repetição.
+	
+	Coleção é varios objetos agrupados em uma unidade 
+	
+	O java tem um framework collections , que ajuda 
+	manipular as coleções dentro dos 3 tipos diferentes ( Set, List, Map)
+		-adicionando elemento
+		-removendo elemento
+		-acessar elemento
+		-pesquisando elemento
+	
+	isso é diferente de composição ? 
+		se sim isso quer dizer que os elementos serão estanciados quando o conjunto for estanciado tmbm ?
+		ou senão os elementos objetos serão estanciados separadamente do conjunto ?
+		
+	Exemplo : exemplo usando as 3 classes que implementa a interface set
+																		HashSet
+																		TreeSet 
+																		LinkHashSet  
+																		
+	
+	conjunto Turma 
+				é um conjunto de alunos sem repetição
+		Uma turma tem varios alunos .
+				cada turma é um objeto e ela contém  um conjunto de alunos
+				cada aluno é um objeto e ele contém varias informações 
+				-nome
+				-idade
+				-endereço
+		 		
+	Um conjunto em programação orientada a objetos é uma estrutura de dados que armazena um grupo de objetos sem repetição. 
+	
+	
+demorei	3h 25 minutos 

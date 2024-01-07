@@ -1,0 +1,20 @@
+
+13.Uma HashMap pode ter duas chaves com o mesmo valor?
+
+	Pode sim
+	
+	Exemplo , coloquei duas chave diferente com o mesmo valor repetido;
+	
+	
+	Um exemplo pratico de treinar com esta estrutura de dados que tem duas quantidades de produto para o mesmo produto
+	
+	Eu faria um algoritmo que vai juntar todas as quantidades do produto 
+	
+	O(n²)
+	Um for para cada elemento
+		Outro for para cada elemento denovo pois vou procurar aonde tem elemento com o valor repetido
+		ir de um por um e perguntar se tem o mesmo valor 
+			se caso tiver soma as quantidades e apaga aquele elemento repetido
+			
+			
+Demorei 12 minutos

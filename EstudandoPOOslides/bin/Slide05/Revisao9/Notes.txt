@@ -1,0 +1,8 @@
+
+9.Uma operação que tenta acessar um índice que não existe gera que tipo de exceção?
+	IndexOutOfBound
+	
+	exemplo uma array com dois elementos é tentado acessar  o elemento do indice 2
+	
+	
+demorei em 7 minutos

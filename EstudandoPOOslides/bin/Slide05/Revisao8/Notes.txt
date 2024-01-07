@@ -1,0 +1,7 @@
+
+8.Que estruturas em Java implementam arrays redimensionáveis?
+	listas implementadas com as classes ArrayList, Vector, LinkedList 
+	
+		Em Java, as estruturas de dados que implementam arrays redimensionáveis são as seguintes:
+		
+demorei 26' para responder

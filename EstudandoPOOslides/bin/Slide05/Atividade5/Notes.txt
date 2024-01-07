@@ -1,0 +1,8 @@
+
+Atividade 5
+
+5.Escrever uma classe TesteHashMap que cria um map de tipos específicos que tem como chaves números inteiros (Integer) representando as matrículas dos estudantes, e como valor os respectivos objetos da classe Estudante.
+Crie três instâncias de estudante e os inclua no map.
+Depois, consulte o map utilizando a matrícula de algum estudante, exibindo os dados dos estudante consultado.
+
+fiz em 13' 
