@@ -1,0 +1,159 @@
+feito em 30 minutos
+
+2.O que é herança de classes?
+			Herança é o compartilhamento de atributos e metodos entre classes que estão relacionadas de um jeito hierarquizado
+
+				Aqui estão 10 exemplos de herança de classes em programação orientada a objetos:
+				
+				Animal e Cachorro: A classe Animal pode ter atributos como nome, idade, peso, altura, etc. A classe Cachorro pode herdar todos os atributos e métodos da classe Animal e ainda especificar novas funções e atributos, como latir, abanar o rabo, etc12.
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Animal {
+				    public String nome;
+				    public int idade;
+				    public double peso;
+				    public double altura;
+				}
+				
+				class Cachorro extends Animal {
+				    public void latir() {
+				        System.out.println("Au au!");
+				    }
+				    public void abanarRabo() {
+				        System.out.println("Abanando o rabo...");
+				    }
+				}
+				
+				
+				Veículo e Carro: A classe Veículo pode ter métodos como locomover(), parar(), e ligarLanternas(). A classe Carro pode herdar todos os métodos da classe Veículo e ainda especificar novas funções e atributos, como travarPortas() e abrirVidros()1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Veiculo {
+				    public void locomover() {
+				        System.out.println("Veículo se locomovendo...");
+				    }
+				    public void parar() {
+				        System.out.println("Veículo parando...");
+				    }
+				    public void ligarLanternas() {
+				        System.out.println("Ligando lanternas...");
+				    }
+				}
+				
+				class Carro extends Veiculo {
+				    public void travarPortas() {
+				        System.out.println("Travando portas...");
+				    }
+				    public void abrirVidros() {
+				        System.out.println("Abrindo vidros...");
+				    }
+				}
+				Pessoa e Funcionário: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Funcionário pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como cargo, salário, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Funcionario extends Pessoa {
+				    public String cargo;
+				    public double salario;
+				}
+				Figura e Retângulo: A classe Figura pode ter métodos como calcularÁrea() e calcularPerímetro(). A classe Retângulo pode herdar todos os métodos da classe Figura e ainda especificar novas funções e atributos, como largura e altura1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Figura {
+				    public double calcularÁrea() {
+				        return 0;
+				    }
+				    public double calcularPerímetro() {
+				        return 0;
+				    }
+				}
+				
+				class Retângulo extends Figura {
+				    public double largura;
+				    public double altura;
+				    public double calcularÁrea() {
+				        return largura * altura;
+				    }
+				    public double calcularPerímetro() {
+				        return 2 * (largura + altura);
+				    }
+				}
+				Pessoa e Estudante: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Estudante pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como curso, matrícula, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Estudante extends Pessoa {
+				    public String curso;
+				    public int matricula;
+				}
+				Conta e ContaCorrente: A classe Conta pode ter atributos como número da conta, saldo, etc. A classe ContaCorrente pode herdar todos os atributos e métodos da classe Conta e ainda especificar novas funções e atributos, como limite, taxaDeJuros, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Conta {
+				    public int numeroDaConta;
+				    public double saldo;
+				}
+				
+				class ContaCorrente extends Conta {
+				    public double limite;
+				    public double taxaDeJuros;
+				}
+				
+				
+				Pessoa e Cliente: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Cliente pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como número de telefone, endereço de e-mail, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Cliente extends Pessoa {
+				    public String numeroDeTelefone;
+				    public String enderecoDeEmail;
+				}
+				Conta e ContaPoupança: A classe Conta pode ter atributos como número da conta, saldo, etc. A classe ContaPoupança pode herdar todos os atributos e métodos da classe Conta e ainda especificar novas funções e atributos, como taxa de juros, data de vencimento, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Conta {
+				    public int numeroDaConta;
+				    public double saldo;
+				}
+				
+				class ContaPoupança extends Conta {
+				    public double taxaDeJuros;
+				    public String dataDeVencimento;
+				}
+				Pessoa e Professor: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Professor pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como disciplina, salário, etc1
+				Java
+				Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+				
+				class Pessoa {
+				    public String nome;
+				    public int idade;
+				    public String endereco;
+				}
+				
+				class Professor extends Pessoa {
+				    public String disciplina;
+				    public double salario;
+				}
