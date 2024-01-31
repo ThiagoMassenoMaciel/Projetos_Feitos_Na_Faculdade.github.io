@@ -1,0 +1,41 @@
+3.Quais as vantagens do uso de herança?
+
+		O processo de desenvolvimento vai ser mais eficiente pela organização hierarquica das classes
+
+		Reutiliza trechos de código através do relacionamento que uma classe filha herda atributos e metodos do pai.
+
+		mais fácil de fazer manutenção nos códigos 
+			já que quando for atualizar um código (classe pai) os outros ja vão atualizar automaticamente(classes filhas)
+
+		Permite que o código cresca linnearmente a sua complexidade
+
+		Cada nova classe que for criada , nesta lógica com a herança torna o projeto mais seguro pois a nova interação é previsível
+		
+		Um bom projeto acaba com o “reaproveitamento” do tipo Copy & Paste.
+		
+		A herança é um dos conceitos fundamentais da programação orientada a objetos. 
+		Ela permite que uma classe herde atributos e métodos de outra classe, chamada de classe base ou superclasse. 
+		
+		A principal vantagem da herança é a capacidade de reutilizar código e organizar hierarquicamente as classes,
+		tornando o desenvolvimento mais eficiente 123.
+		
+		Além disso, a herança possibilita que as classes compartilhem seus atributos, métodos e outros membros da classe entre si. 
+		Para a ligação entre as classes, a herança adota um relacionamento esquematizado hierarquicamente. 
+		Na Herança temos dois tipos principais de classe: 
+		Classe Base: A classe que concede as características a uma outra classe. 
+		Classe Derivada: A classe que herda as características da classe base. 
+		O fato de as classes derivadas herdarem atributos das classes bases assegura que programas orientados a objetos cresçam de forma 
+		linear e não geometricamente em complexidade. 
+		Cada nova classe derivada não possui interações imprevisíveis em relação ao restante do código do sistema. 
+		Com o uso da herança, uma classe derivada geralmente é uma implementação especifica de um caso mais geral. 
+		A classe derivada deve apenas definir as características que a tornam única.
+		
+		Por exemplo, imagine que já exista uma classe que defina o comportamento de um dado objeto da vida real, por exemplo, animal. 
+		A ideia de herança é facilitar a programação e orientação a objetos. 
+		Uma classe A deve herdar de uma classe B quando podemos dizer que A é um B.
+		 Por exemplo, imagine que já exista uma classe que defina o comportamento de um dado objeto da vida real, por exemplo, animal. 
+		 A classe Animal pode ter atributos como nome, idade, peso, altura, etc. Agora, imagine que você queira criar uma classe Cachorro. 
+		 Como o cachorro é um animal, você pode criar uma classe Cachorro que herda todos os atributos e métodos da classe Animal. 
+		 Além disso, você pode adicionar novos atributos e métodos específicos da classe Cachorro, como latir, abanar o rabo, etc. 
+		 Isso é possível graças à herança.
+	

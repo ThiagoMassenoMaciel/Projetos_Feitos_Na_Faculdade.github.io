@@ -49,6 +49,10 @@ feito em 30 minutos
 				    public void abrirVidros() {
 				        System.out.println("Abrindo vidros...");
 				    }
+				    
+				    public void CameraTrazeira(){
+				    	System.out.println("Exibindo ao motorista a traseira do caso sinalizando aproximidade");
+				    }
 				}
 				Pessoa e Funcionário: A classe Pessoa pode ter atributos como nome, idade, endereço, etc. A classe Funcionário pode herdar todos os atributos e métodos da classe Pessoa e ainda especificar novas funções e atributos, como cargo, salário, etc1
 				Java
