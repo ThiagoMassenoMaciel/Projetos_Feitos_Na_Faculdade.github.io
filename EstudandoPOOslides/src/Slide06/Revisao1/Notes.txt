@@ -26,29 +26,12 @@
 		o estudante que trabalha da faculdade fazendo monitoria		novo
 		
 	todos os três tem algums atibutos e metodos em comum , e apenas nos novos estudantes, tem a mais
-	
-	
-		 
-	
-	
+
 2. Feito
 
 3. Feito
 
-
-4.Quais os outros nomes para superclasse e subclasse?
-	
-	a nova classe herda tudo daquela já criada sem precisar escrever denovo 
-			ela é chamada de 
-				-Subclasse, 
-				-classe derivada, 
-				-classe filha
-			de quem ela esta herdando é chamado de 
-				-Superclasse, 
-				-classe base, 
-				-classe mãe, 
-				-classe pai
-			ela pode tmbm mudar o que herdou e ou add mais atributos e ou metodos
+4_ feito
 			
 5.Uma subclasse pode ter mais propriedades e mais operações do que sua superclasse? E menos?
 	Pode ter mais propriedades e mais operações; Não pode ter menos ,visto que se ela herda tudo , logo ela tem no mínimo o mesmo tanto que a classe pai 

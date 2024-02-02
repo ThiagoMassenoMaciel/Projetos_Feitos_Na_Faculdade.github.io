@@ -1,0 +1,14 @@
+4.Quais os outros nomes para superclasse e subclasse?
+
+demorei 26 minutos
+	a nova classe herda tudo daquela já criada sem precisar escrever denovo 
+			ela é chamada de 
+				-Subclasse, 
+				-classe derivada, 
+				-classe filha
+			de quem ela esta herdando é chamado de 
+				-Superclasse, 
+				-classe base, 
+				-classe mãe, 
+				-classe pai
+			ela pode tmbm mudar o que herdou e ou add mais atributos e ou metodos

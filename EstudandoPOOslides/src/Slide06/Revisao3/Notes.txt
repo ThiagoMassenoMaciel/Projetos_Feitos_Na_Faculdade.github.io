@@ -1,5 +1,5 @@
 3.Quais as vantagens do uso de herança?
-
+demorei 40 minutos
 		O processo de desenvolvimento vai ser mais eficiente pela organização hierarquica das classes
 
 		Reutiliza trechos de código através do relacionamento que uma classe filha herda atributos e metodos do pai.
